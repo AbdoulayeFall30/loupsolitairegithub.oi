@@ -1,0 +1,3666 @@
+body, h1, h2, h3, h4, h5, h6, h7, p, ul, ol, li, cite, hr, form, fieldset, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+table {
+	font-size: 1em;
+}
+ul, li {
+	list-style-type: none;
+	list-style: none;
+}
+.wsw img, .topBlock img, .pollBlock img, .prodCards img, .prodDetail img, .galTnBlock img, .galDetail img, .ftSearchQuery img, .contImg img {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.hidden {
+	position: absolute;
+	display: none;
+}
+.forBlind {
+	position: absolute;
+	top: -100000px;
+}
+.cleaner {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 1px;
+	line-height: 1px;
+	margin: 0;
+	padding: 0;
+}
+.toLft {
+	float: left;
+}
+.toRgt {
+	float: right;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	text-align: center;
+	background: #5b4611;
+	font: 0.8em/1.33 "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	color: #ffffff;
+}
+div#pageFrameWrapper {
+	background: #5b4611 url('./../img/layout/body-top-bg.gif') left top repeat-x;
+}
+div#pageFrame {
+	width: 780px;
+	height: 100%;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	background: transparent url('./../img/layout/sb-bg-y.gif') left top repeat-y;
+	z-index: 3;
+}
+#pageFrame[id] {
+	height: auto;
+	min-height: 100%;
+}
+#pageFrameCont {
+	padding: 0 0 98px 0;
+}
+a {
+	color: #f3a21c;
+	text-decoration: underline;
+}
+a:visited {
+	color: #ffffff;
+	text-decoration: underline;
+}
+a:active, a:hover {
+	color: #f9c562;
+}
+.colSide a {
+	color: #705d26;
+}
+.colSide a:visited {
+	color: #000000;
+}
+.colSide a:active, .colSide a:hover {
+	color: #331d10;
+}
+.colSide .row1 a {
+	color: #ed951c;
+}
+.colSide .row1 a:visited {
+	color: #000000;
+}
+.colSide .row1 a:active, .colSide .row1 a:hover {
+	color: #f9c562;
+}
+.backLink {
+	margin-top: 1em;
+	padding: 1em 0.5em 0.5em 0.5em;
+	text-align: right;
+	font-weight: bold;
+	border-top: 1px solid #000000;
+}
+.backLink a {
+	padding-right: 20px;
+	background: transparent url('./../img/layout/photo-arr-r-off.gif') right center no-repeat;
+}
+.backLink a:visited {
+	color: #f3a21c;
+}
+.colSide .backLink a:visited {
+	color: #705d26;
+}
+.colSide .row1 .backLink a:visited {
+	color: #ed951c;
+}
+.backLink a:active, .backLink a:hover {
+	color: #f9c562;
+	background-image: url('./../img/layout/photo-arr-r-on.gif');
+}
+.colSide .backLink a:active,	.colSide .backLink a:hover {
+	color: #331d10;
+}
+.colSide .backLink a {
+	background: transparent url('./../img/layout/photo-arr-r-sb-off.gif') right center no-repeat;
+}
+.colSide .backLink a:active, .colSide .backLink a:hover {
+	background-image: url('./../img/layout/photo-arr-r-sb-on.gif');
+}
+.lightBoxOut {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.lightBoxIn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.colSide .rbcReplaceBorderColor {
+	border-color: #3f3f3f;
+}
+.colSide .rbcReplaceTextColor {
+	color: #3f3f3f;
+}
+.topBlock {
+	width: 100%;
+	height: 81px;
+	overflow: hidden;
+	background: transparent url('./../img/layout/tb-bg-x.gif') left top repeat-x;
+	border-bottom: 3px solid #ffffff;
+}
+
+* html .topBlock {
+	height: 84px;
+}
+
+.topBlock #logo {
+	display: block;
+	width: 415px;
+	height: 50px;
+	position: relative;
+	left: 19px;
+	top: 19px;
+	overflow: hidden;
+	font-size: 2.5em;
+	color: #ffffff;
+}
+.topBlock #logo a, .topBlock #logo span {
+}
+.topBlock #logo a, .topBlock #logo a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+.topBlock #logo a:active, .topBlock #logo a:hover {
+	color: #999999;
+}
+.topBlock #logo span {
+}
+#topBar {
+	/*width: 325px;*/
+	/*height: 1.33em;*/
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	text-align: right;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#topBar ul.tbLinkList {
+	/*display: inline;*/
+	float: right;
+}
+
+#topBar ul.tbLinkList li {
+	display: inline;
+	margin: 0 3px;
+	padding-left: 10px;
+	font-size: 0.85em;
+	font-weight: bold;
+	border-left: 1px solid #9a7e37;
+}
+		#topBar ul.tbLinkList li.first {
+	border-left: none;
+	padding-left: 0;
+}
+	#topBar ul.tbLinkList li a,
+	#topBar ul.tbLinkList li a:visited {
+	padding-left: 8px;
+	color: #ffffff;
+	text-decoration: none;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+	#topBar ul.tbLinkList li a:active,
+	#topBar ul.tbLinkList li a:hover {
+		/*text-decoration: underline;*/
+	}
+#topBar ul.tbLinkList li.tbLinkHomepage a {
+	background-image: url('./../img/layout/tb-ico-homepage.gif');
+}
+#topBar ul.tbLinkList li.tbLinkSitemap a {
+	background-image: url('./../img/layout/tb-ico-sitemap.gif');
+}
+#topBar ul.tbLinkList li.tbLinkRss a {
+	background-image: url('./../img/layout/tb-ico-rss.gif');
+}
+#topBar ul.tbLinkList li.tbLinkPrint a {
+	background-image: url('./../img/layout/tb-ico-print.gif');
+}
+.topBlock p.tbSlogan {
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	width: 325px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: right;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageNavigator {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+.navigatorBlock {
+	color: #ffffff;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	background-color: #372012;
+	overflow: hidden;
+	position: relative;
+}
+.navigatorBlock .navigatorBlockIn {
+	margin: 0 5px;
+	overflow: hidden;
+	line-height: 1.5em;
+	font-size:  0.9em;
+}
+.navigatorBlock .navigatorBlockIn a, .navigatorBlock .navigatorBlockIn a:visited, .navigatorBlock .navigatorBlockIn span#navCurrentPage {
+	color: #ed951c;
+	font-weight: bold;
+}
+.navigatorBlock .navigatorBlockIn a:active, .navigatorBlock .navigatorBlockIn a:hover {
+	color: #c07a07;
+}
+.navigatorBlock .navigatorBlockIn a {
+	cursor: pointer;
+}
+.navigatorBlock .navigatorBlockIn a.navFirstPage {
+	padding-left: 0;
+	margin-left: 0;
+	background-image: none;
+}
+.navigatorBlock .navigatorBlockIn span {
+	background: transparent url('./../img/layout/nav-li.gif') left 50% no-repeat;
+	margin: 0 14px;
+}
+.navigatorBlock .navigatorBlockIn span span {
+	margin: 0;
+	visibility: hidden;
+}
+.navigatorBlock .navigatorBlockIn span#navCurrentPage {
+	margin: 0;
+	background: none;
+	color: #ffffff;
+}
+.mainTopSpacer {
+	width: 100%;
+	height: 3px;
+	background-color: #ffffff;
+}
+.contTopSpacer {
+	width: 100%;
+	height: 2px;
+	background-color: #372012;
+}
+.colA1, .colA2, .colA3, .colB1, .colB2, .colB3, .colB4, .colC1, .colC3, .colC2, .colC4, .colD1, .colD2 {
+	overflow: hidden;
+}
+.colA1, .colA2, .colA3, .colB1, .colB2, .colB3, .colB4, .colC1, .colC2, .colC3, .colC4, .colD1, .colD2 {
+}
+.colSide {
+	font-size: 0.9em;
+}
+.colsB23, .colsC12 {
+	font-size: 0.95em;
+}
+.colDesign .colTopBorder {
+	width: 100%;
+	height: 6px;
+	background: transparent url('./../img/layout/box-top-bg-x.gif') left top repeat-x;
+}
+.colDesign .colSide .colTopBorder {
+	background-image: url('./../img/layout/box-top-bg2-x.gif');
+}
+div.colsA12 {
+	width: 518px;
+	float: right;
+}
+div.colA1 {
+	width: 256px;
+	float: left;
+}
+div.colA2 {
+	width: 256px;
+	float: right;
+}
+div.colA3 {
+	width: 256px;
+	float: left;
+}
+div.colsB123 {
+	width: 518px;
+	float: right;
+}
+div.colsB12 {
+	width: 100%;
+}
+div.colB1 {
+	width: 256px;
+	float: left;
+}
+div.colB2 {
+	width: 256px;
+	float: right;
+}
+div.colB3 {
+	width: 100%;
+	margin-top: 6px;
+}
+div.colB4 {
+	width: 256px;
+	float: left;
+}
+div.colsC123 {
+	width: 518px;
+	float: right;
+}
+div.colC1 {
+	width: 100%;
+}
+div.colsC23 {
+	width: 100%;
+	padding-top: 6px;
+}
+div.colC2 {
+	width: 256px;
+	float: left;
+}
+div.colC3 {
+	width: 256px;
+	float: right;
+}
+div.colC4 {
+	width: 256px;
+	float: left;
+}
+div.colD1 {
+	width: 518px;
+	float: right;
+}
+div.colD2 {
+	width: 256px;
+	float: left;
+}
+.footBlock {
+	width: 780px;
+	height: 98px;
+	position: absolute;
+	bottom: 0;
+	background-color: #331d10;
+	z-index: 2;
+}
+.footBlock .footBlockHi {
+	width: 100%;
+	height: 12px;
+	overflow: hidden;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.footBlock .footBlockHi.A {
+	background-image: url('./../img/layout/foot-top-bg-a.gif');
+}
+.footBlock .footBlockHi.B {
+	background-image: url('./../img/layout/foot-top-bg-b.gif');
+}
+.footBlock .footBlockHi.C {
+	background-image: url('./../img/layout/foot-top-bg-c.gif');
+}
+.footBlock .footBlockHi.D {
+	background-image: url('./../img/layout/foot-top-bg-d.gif');
+}
+.footBlock .footBlockLo {
+	width: 100%;
+	height: 86px;
+	overflow: hidden;
+	background: transparent url('./../img/layout/foot-dwn-bg-x.gif') left top repeat-x;
+}
+.footBlock .footBlockLo .wsw {
+	padding-top: 35px;
+	color: #ffffff;
+	font-size: 0.9em;
+}
+.footBlock .footBlockLo .wsw .footerText {
+	float: left;
+	overflow: hidden;
+	padding-left: 20px;
+	white-space: nowrap;
+	width: 60%;
+}
+.footBlock .footBlockLo .wsw .rubicusText {
+	float: right;
+	overflow: hidden;
+	padding-right: 20px;
+	text-align: right;
+	white-space: nowrap;
+	width: 30%;
+}
+.footBlock .footBlockLo .wsw a {
+	color: #F3A21C;
+}
+.footBlock .footBlockLo .wsw a:visited {
+	color: #f3a21c;
+}
+.footBlock .footBlockLo .wsw a:active, .footBlock .footBlockLo .wsw a:hover {
+	color: #f9c562;
+}
+.footBlockFullBg {
+	display: none;
+	width: 100%;
+	height: 98px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: transparent url('./../img/layout/foot-over-bg-top-x.gif') left top repeat-x;
+	z-index: 1;
+}
+.contBlock {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contBlock .contOut {
+	margin: 0 20px;
+}
+.contBlock .contOut .contIn {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 10px;
+}
+.contBlock .contOut .contIn[class] {
+	width: auto;
+}
+.colSplit .contBlock .contOut .contIn {
+	margin: 5px;
+}
+.colSide .contBlock .contOut .contIn {
+	margin: 0;
+}
+.contBlock h1, .contBlock h2, .wsw h2 {
+	padding: 0 10px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #8f8f8f;
+	text-transform: uppercase;
+	border-bottom: 1px solid #5a5859;
+	margin-bottom: 10px;
+}
+.contBlock h1:first-letter,	.contBlock h2:first-letter, .wsw h2:first-letter {
+	font-size: 1.5em;
+}
+.colMain h1 {
+}
+.colSplit h1,	.colSplit h2, .colSplit .wsw h2 {
+	padding: 5px;
+}
+.colSide h1,	.colSide h2, .colSide .wsw h2 {
+	padding: 0;
+	color: #454545;
+}
+ol.tags {
+	margin-top: 1em;
+	border-top: 1px solid #000000;
+	padding-top: 1em;
+	padding-bottom: 0.2em;
+}
+ol.tags li {
+	display: inline;
+	margin-right: 0.3em;
+}
+.tagCloud ol.tags {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	text-align: center;
+	overflow: hidden;
+	line-height: 2.8em;
+}
+.tagCloud ol.tags li {
+	margin: 0 0.5em;
+}
+div.rbcTags {
+}
+div.rbcTags h4 {
+	font-size: 1em;
+	font-weight: bold;
+	display: inline;
+	margin-right: 0.5em;
+}
+div.rbcTags p {
+	display: inline;
+}
+.rbcBookmarksAddThis {
+	float: left;
+	margin-top: 2em;
+	padding-top: 1px;
+}
+table#waitingTable {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+table#waitingTable, table#waitingTable td, table#waitingTable tr {
+	background-color: transparent;
+	text-align: center;
+	border: 0;
+}
+table#waitingTable td {
+	vertical-align: middle;
+	text-align: center;
+}
+.pollBlock table#waitingTable td img, .colSide table#waitingTable td img {
+	visibility: hidden;
+}
+.pollBlock table#waitingTable td {
+	background: transparent url('./../img/layout/loading-poll.gif') no-repeat center !important;
+}
+.colSide table#waitingTable td {
+	background: transparent url('./../img/layout/loading-side.gif') no-repeat center;
+}
+.contImg {	
+	position: relative;
+	overflow: hidden;
+}
+.contImg img {
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+.contImg .contImgCut {
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: expression( parentNode.offsetHeight - this.offsetHeight);
+	background-repeat: no-repeat;
+	background-position: left top;
+	z-index: 2;
+}
+.contImg .contImgCut[class] {
+	top: auto;
+	bottom: 0;
+}
+.contImg .contImgCut {
+	height: 50px;
+}
+.contImg .contImgCut[class] {
+}
+.menuBlockOut {
+	background: transparent url('./../img/layout/lm-bg-y.jpg') left top repeat-y;
+}
+.menuBlockOut .menuBlockIn {
+	padding-top: 10px;
+}
+.menuDwnBg {
+	display: block;
+	width: 256px;
+	height: 56px;
+	margin-top: 2px;
+	background: transparent url('./../img/layout/lm-dwn-bg.jpg') left top repeat-x;
+}
+.menuDwnBg[class] {
+	margin-top: 0;
+	margin-top: expression( '2px');
+}
+ul.menu, #rbcEsCategories ul {
+	width: 210px;
+	margin-left: 23px;
+}
+.menu li, #rbcEsCategories ul li {
+	width: 100%;
+	float: left;
+	clear: left;
+	margin-bottom: 2px;
+}
+.menu[class] li, #rbcEsCategories[id] ul li {
+	float: none;
+	float: expression( 'left');
+}
+.menu li a,		
+.menu li a:visited, 
+#rbcEsCategories ul li a, 
+#rbcEsCategories ul li a:visited  {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #000000;
+	background-image: url('./../img/layout/lm-l1-bg-y.gif');
+	background-repeat: repeat-y;
+	background-position: 0 top;
+}
+.menu li.selected a,			
+.menu li.activeSelected a,
+#rbcEsCategories ul li.selected a,			
+#rbcEsCategories ul li.activeSelected a {
+	font-weight: bold;
+	color: #442e12 !important;
+	text-decoration: none;
+	background-position: -210px top;
+}
+.menu li a:active,			
+.menu li a:hover,
+#rbcEsCategories ul li a:active,			
+#rbcEsCategories ul li a:hover {
+	color: #f5a31b !important;
+	background-position: -420px top;
+	text-decoration: underline;
+}
+.menu li a span.mIco,
+#rbcEsCategories ul li a span.mIco {
+	display: block;
+	width: 30px;
+	height: 16px;
+	float: left;
+	cursor: pointer;
+	overflow: hidden;
+	background-image: url('./../img/layout/lm-ico.gif');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin-top: 1px;
+}
+.menu li.selected a .mIco,				
+.menu li.selected a:hover .mIco,				
+.menu li.activeSelected a .mIco,				
+.menu li.activeSelected a:hover .mIco,
+#rbcEsCategories ul li.selected a .mIco,				
+#rbcEsCategories ul li.selected a:hover .mIco,				
+#rbcEsCategories ul li.activeSelected a .mIco,				
+#rbcEsCategories ul li.activeSelected a:hover .mIco  {
+	background-position: 0 -16px;
+	margin-top: 2px;
+}
+.menu li a:active .mIco,				
+.menu li a:hover .mIco,
+#rbcEsCategories ul li a:active .mIco,				
+#rbcEsCategories ul li a:hover .mIco {
+	background-position: 0 -32px;
+}
+.menu li a span.tIn,
+#rbcEsCategories ul li a span.tIn {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 6px 5px 4px 20px;
+}
+.menu li a .tIn[class],
+#rbcEsCategories ul li a .tIn[class] {
+	width: auto;
+}
+ul.menu li ul,
+#rbcEsCategories ul li ul {
+	width: 180px;
+	margin: 2px 0 0 30px;
+	font-size: 0.95em;
+	background: #ffffff url('./../img/layout/lm-l2-bg-y.jpg') left top repeat-y;
+}
+.menu li ul li a,	
+.menu li ul li a:visited,
+#rbcEsCategories ul li ul li a,	
+#rbcEsCategories ul li ul li a:visited {
+	background-image: none;
+}
+.menu li ul li a:active,		
+.menu li ul li a:hover,
+#rbcEsCategories ul li ul li a:active,		
+#rbcEsCategories ul li ul li a:hover {
+	margin-top: 0;
+}
+.menu li ul li a span.mIco,		
+.menu li.selected ul li a span.mIco,		
+.menu li.activeSelected ul li a span.mIco,
+#rbcEsCategories ul li ul li a span.mIco,		
+#rbcEsCategories ul li.selected ul li a span.mIco,		
+#rbcEsCategories ul li.activeSelected ul li a span.mIco {
+	background-position: -30px 0px;
+	margin-top: 0;
+}
+.menu li.selected ul li.selected a .mIco,			
+.menu li.selected ul li.selected a:hover .mIco,			
+.menu li.selected ul li.activeSelected a .mIco,			
+.menu li.selected ul li.activeSelected a:hover .mIco,
+#rbcEsCategories ul li.selected ul li.selected a .mIco,			
+#rbcEsCategories ul li.selected ul li.selected a:hover .mIco,			
+#rbcEsCategories ul li.selected ul li.activeSelected a .mIco,			
+#rbcEsCategories ul li.selected ul li.activeSelected a:hover .mIco {
+	background-position: -30px -16px;
+	margin-top: 0;
+}
+.menu li ul li a:active .mIco,			
+.menu li ul li a:hover .mIco,			
+.menu li.selected ul li a:hover span.mIco,			
+.menu li.activeSelected ul li a:hover span.mIco,
+#rbcEsCategories ul li ul li a:active .mIco,			
+#rbcEsCategories ul li ul li a:hover .mIco,			
+#rbcEsCategories ul li.selected ul li a:hover span.mIco,			
+#rbcEsCategories ul li.activeSelected ul li a:hover span.mIco {
+	background-position: -30px -32px;
+	margin-top: 0;
+}
+.menu li ul li a span.tIn,
+#rbcEsCategories ul li ul li a span.tIn {
+	padding: 4px 5px 3px 6px;
+}
+ul.menu li ul li ul,
+#rbcEsCategories ul li ul li ul {
+	width: 150px;
+	margin: 0 0 0 30px;
+	background-color: transparent;
+	background-image: none;
+	font-size: 1em;
+}
+.menu li ul li ul li a,   
+.menu li ul li ul li a:visited,	
+.menu li.selected ul li.selected ul li a,	
+.menu li.selected ul li.selected ul li a:visited,	
+.menu li.selected ul li.selected ul li.selected a,	
+.menu li.selected ul li.selected ul li.selected a:visited,
+#rbcEsCategories ul li ul li ul li a,   
+#rbcEsCategories ul li ul li ul li a:visited,	
+#rbcEsCategories ul li.selected ul li.selected ul li a,	
+#rbcEsCategories ul li.selected ul li.selected ul li a:visited,	
+#rbcEsCategories ul li.selected ul li.selected ul li.selected a,	
+#rbcEsCategories ul li.selected ul li.selected ul li.selected a:visited {
+	font-weight: normal;
+}
+.menu li ul li ul li a span.mIco,		
+.menu li.selected ul li.selected ul li a span.mIco,		
+.menu li.selected ul li.activeSelected ul li a span.mIco,
+#rbcEsCategories ul li ul li ul li a span.mIco,		
+#rbcEsCategories ul li.selected ul li.selected ul li a span.mIco,		
+#rbcEsCategories ul li.selected ul li.activeSelected ul li a span.mIco {
+	background-position: -30px -2px;
+}
+.menu li.selected ul li.selected ul li.selected a .mIco,			
+.menu li.selected ul li.selected ul li.selected a:hover .mIco,			
+.menu li.selected ul li.selected ul li.activeSelected a .mIco,			
+.menu li.selected ul li.selected ul li.activeSelected a:hover .mIco,
+#rbcEsCategories ul li.selected ul li.selected ul li.selected a .mIco,			
+#rbcEsCategories ul li.selected ul li.selected ul li.selected a:hover .mIco,			
+#rbcEsCategories ul li.selected ul li.selected ul li.activeSelected a .mIco,			
+#rbcEsCategories ul li.selected ul li.selected ul li.activeSelected a:hover .mIco {
+	background-position: -30px -18px;
+}
+.menu li.selected ul li.selected ul li a:active .mIco,			
+.menu li.selected ul li.selected ul li a:hover .mIco,
+#rbcEsCategories ul li.selected ul li.selected ul li a:active .mIco,			
+#rbcEsCategories ul li.selected ul li.selected ul li a:hover .mIco {
+	background-position: -30px -34px;
+}
+.menu li ul li ul li a span.tIn,
+#rbcEsCategories ul li ul li ul li a span.tIn {
+	padding: 3px 5px 1px 6px;
+}
+ul.menu li ul li ul li ul,
+#rbcEsCategories ul li ul li ul li ul {
+	margin: 0;
+	font-size: 1em;
+}
+.menu li ul li ul li ul li a span.mIco, 
+.menu li.selected ul li.selected ul li.selected ul li a span.mIco, 
+.menu li ul li ul li ul li ul li a span.mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li a span.mIco, 
+.menu li ul li ul li ul li ul li ul li a span.mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a span.mIco, 
+.menu li ul li ul li ul li ul li ul li ul li a span.mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a span.mIco,
+#rbcEsCategories ul li ul li ul li ul li a span.mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li a span.mIco, 
+#rbcEsCategories ul li ul li ul li ul li ul li a span.mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li a span.mIco, 
+#rbcEsCategories ul li ul li ul li ul li ul li ul li a span.mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a span.mIco, 
+#rbcEsCategories ul li ul li ul li ul li ul li ul li ul li a span.mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a span.mIco {
+	background-position: -30px -2px;
+}
+.menu li.selected ul li.selected ul li.selected ul li.selected a .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected a:hover .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected a .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected a:hover .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a:hover .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a:hover .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected a .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected a:hover .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a:hover .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a:hover .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected a:hover .mIco {
+	background-position: -30px -18px;
+}
+.menu li.selected ul li.selected ul li.selected ul li a:active .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li a:hover .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li a:active .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li a:hover .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a:active .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a:hover .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a:active .mIco, 
+.menu li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a:hover .mIco,
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li a:active .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li a:hover .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li a:active .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li a:hover .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a:active .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a:hover .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a:active .mIco, 
+#rbcEsCategories ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li.selected ul li a:hover .mIco {
+	background-position: -30px -34px;
+}
+.pagination {
+	font-weight: bold;
+	overflow: hidden;
+	font-weight: bold;
+	border-top: 1px solid #5b5858;
+	padding-bottom: 10px;
+}
+.pagination .info {
+	float: left;
+	margin: 10px 5px 0 5px;
+	white-space: nowrap;
+	font-weight: normal;
+}
+.pagination .info[class] {
+	margin: 10px 10px 0 10px;
+}
+.colSide .pagination .info, .colSplit .pagination .info {
+	float: none;
+	margin: 10px 10px 0 10px;
+}
+.contBlock .archive {
+	text-align: right;
+	margin: 0px 5px 10px 5px;
+	white-space: nowrap;
+	font-weight: normal;
+}
+.contBlock .archive a, .contBlock .archive a:visited {
+	font-weight: bold;
+	color: #f3a21c;
+	padding-right: 18px;
+	background: transparent url('./../img/layout/photo-arr-r-off.gif') right 65% no-repeat;
+}
+.contBlock .archive a:active, .contBlock .archive a:hover {
+	color: #f9c562;
+	background-image: url('./../img/layout/photo-arr-r-on.gif');
+}
+.pagination .links {
+	float: right;
+	margin: 10px 5px 0 5px;
+	white-space: nowrap;
+}
+.pagination .links[class] {
+	margin: 10px 10px 0 10px;
+}
+.colSide .pagination .links, .colSplit .pagination .links {
+	float: none;
+	text-align: left;
+	margin: 5px 10px 0 10px;
+}
+.pagination .links .paging {
+}
+.colSide .pagination .links .paging {
+	color: #000000;
+}
+.pagingArea span span.pageText {
+}
+.paging a {
+}
+.paging a .pageText {
+	padding: 0 2px;
+}
+.paging .selected {
+	font-weight: bold;
+}
+.paging .selected span {
+}
+.paging .separator {
+}
+.paging .separator .separatorText {
+}
+.pagination .links .paging .leftEnd {
+}
+.pagination .links .paging .leftEnd .leftEndText {
+	padding-right: 3px;
+}
+.pagination .links .paging .left {
+}
+.paging .links .paging .left .leftText {
+	padding-right: 3px;
+}
+.pagination .links .paging .right {
+}
+.pagination .links .paging .right .rightText {
+	padding-left: 3px;
+}
+.pagination .links .paging .rightEnd {
+}
+.pagination .links .paging .rightEnd .rightEndText {
+	padding-left: 3px;
+}
+.wsw {
+	width: 100%;
+	overflow: hidden;
+}
+.wsw[class] {
+	width: auto;
+}
+.colSide .wsw {
+	color: #000000;
+}
+.wsw a {
+	font-weight: bold;
+}
+.wsw h3, .wsw h4, .wsw h5, .wsw h6, .disForm h4 {
+	padding: 0;
+	background-image: none;
+	background-color: transparent;
+}
+.wsw h3,
+.shopFormHeading {
+	padding: 0.2em 0.8em;
+	font-size: 1em;
+	color: #ffffff;
+	background-color: #c07a07;
+	border-bottom: 3px solid #f5a31b;
+}
+.wsw h4, .disForm h4 {
+	margin: 0.2em 0;
+	font-size: 1.1em;
+	color: #ffffff;
+}
+.wsw h5 {
+	margin: 0.2em 0;
+	font-size: 1.1em;
+	color: #c6a246;
+}
+.colSide .wsw h5 {
+	color: #372012;
+}
+.wsw h6 {
+	margin: 0.2em 0;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #f5a31b;
+}
+.colSide .wsw h6 {
+	color: #5b4611;
+}
+.wsw p {
+	padding: 5px 0;
+}
+.wsw blockquote {
+	margin: 5px 0;
+	padding: 5px 25px;
+	font-style: italic;
+	color: #fae1a2;
+	background-color: #705d26;
+}
+.wsw ul {
+	margin: 5px 0;
+	list-style: none;
+	list-style-type: none;
+}
+.wsw ul li {
+	list-style: none;
+	list-style-type: none;
+	background: transparent url('./../img/layout/wsw-li.gif') left 10px no-repeat;
+	padding: 3px 0 3px 15px;
+}
+.colSide .wsw ul li {
+	background-image: url('./../img/layout/wsw-li2.gif');
+}
+.wsw ul li ul {
+	margin: 0;
+}
+.wsw ul li ul li {
+	margin: 0;
+	background-image: url('./../img/layout/wsw-li.gif');
+}
+.wsw ul li ul li ul li {
+	background-image: url('./../img/layout/wsw-li.gif');
+}
+.wsw ol {
+	margin: 5px 0 5px 25px;
+	list-style-type: decimal;
+}
+.wsw ol li {
+	list-style-type: decimal;
+	padding: 3px 0;
+}
+.wsw ol li ol {
+	margin: 3px 0 3px 20px;
+	list-style-type: lower-alpha;
+}
+.wsw ol li ol li {
+	list-style-type: lower-alpha;
+	padding: 3px 0;
+}
+.wsw ol li ol li ol {
+	margin-left: 20px;
+	list-style-type: upper-roman;
+}
+.wsw ol li ol li ol li {
+	list-style-type: upper-roman;
+	padding: 3px 0;
+}
+.wsw table {
+	width: 99%;
+	margin: 5px 1px;
+	border-collapse: collapse;
+}
+.wsw table tr td {
+	padding: 3px 7px;
+	text-align: left;
+	vertical-align: middle;
+	background-color: transparent;
+	border: none;
+}
+.colSide .wsw table tr td {
+	color: #000000;
+}
+.wsw table.modernTable {
+	width: 99%;
+	margin: 5px 1px;
+	border-collapse: collapse;
+}
+.wsw table.modernTable tr td {
+	padding: 3px 7px;
+	text-align: left;
+	vertical-align: middle;
+}
+.wsw table.modernTable thead tr td {
+	color: #744800;
+	border: 2px solid #5b4611;
+	background: #f2b828 url('./../img/layout/wsw-tab-bg-top-x.gif') left top repeat-x;
+}
+.colSide .wsw table.modernTable thead tr td {
+	border: 2px solid #b1a382;
+}
+.wsw table.modernTable tbody tr td {
+	color: #000000;
+	border: 2px solid #5b4611;
+	background-color: #f8c953;
+}
+.colSide .wsw table.modernTable tbody tr td {
+	color: #000000;
+	border: 2px solid #b1a382;
+	background-color: #f8c953;
+}
+.wsw dl {
+	margin: 5px 0;
+}
+.wsw dl dt {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.wsw dl dd {
+	margin: 0 0 5px 25px;
+}
+.wsw img {
+	margin: 5px;
+	border: none;
+}
+.pollBlock {
+	margin-top: 15px;
+	padding-bottom: 10px;
+	background: #d7711d url('./../img/layout/poll-bg-x.gif') left top repeat-x;
+	margin-bottom: 20px;
+}
+.colMain .pollBlock {
+	width: 465px;
+	margin-left: 26px;
+}
+.colSide .pollBlock, .colSplit .pollBlock {
+	width: 218px;
+	margin-left: 19px;
+}
+.pollBlock .pollHeaderOut {
+	padding-top: 10px;
+	width: 100%;
+}
+.pollBlock .pollHeaderOut .pollHeaderIn {
+	width: 100%;
+	position: relative;
+	padding: 1px 0 8px 0;
+	background-color: #a07814;
+	background-position: left top;
+	background-repeat: repeat-y;
+	z-index: 3;
+}
+.colMain .pollHeaderIn {
+	background-image: url('./../img/layout/shdw-l-bg.gif');
+}
+.colSide .pollHeaderIn, .colSplit .pollHeaderIn {
+	background-image: url('./../img/layout/shdw-s-bg.gif');
+}
+.pollHeaderIn .pollHeaderBgTop, .pollHeaderIn .pollHeaderBgDwn {
+	width: 100%;
+	height: 8px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	z-index: 2;
+}
+.pollHeaderIn .pollHeaderBgTop {
+	top: 0;
+}
+.colMain .pollHeaderIn .pollHeaderBgTop {
+	background-position: -465px top;
+	background-image: url('./../img/layout/shdw-l-bg.gif');
+}
+.colSide .pollHeaderIn .pollHeaderBgTop, .colSplit .pollHeaderIn .pollHeaderBgTop {
+	background-position: -218px top;
+	background-image: url('./../img/layout/shdw-s-bg.gif');
+}
+.pollHeaderIn .pollHeaderBgDwn {
+	bottom: 0;
+	top: expression(parentNode.offsetHeight - this.offsetHeight);
+}
+.pollHeaderIn .pollHeaderBgDwn[class] {
+	top: auto;
+}
+.colMain .pollHeaderIn .pollHeaderBgDwn {
+	background-position: -465px -8px;
+	background-image: url('./../img/layout/shdw-l-bg.gif');
+}
+.colSide .pollHeaderIn .pollHeaderBgDwn, .colSplit .pollHeaderIn .pollHeaderBgDwn {
+	background-position: -218px -8px;
+	background-image: url('./../img/layout/shdw-s-bg.gif');
+}
+.pollBlock .pollHeaderOut .pollHeaderIn h3 {
+	position: relative;
+	top: -4px;
+	margin: 0 10px;
+	padding: 5px 0 0 0;
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	overflow: hidden;
+	background-color: #eb9e1d;
+	z-index: 4;
+}
+.colSide .pollBlock .pollHeaderOut .pollHeaderIn h3 {
+	font-size: 1em;
+}
+.pollBlock .pollHeaderOut .pollHeaderIn[class] h3 {
+	padding: 0;
+}
+.pollBlock .pollHeaderOut .pollHeaderIn h3:first-letter {
+	font-size: 1.5em;
+}
+.pollBlock .pollBlockIn {
+	margin: 0 10px;
+	padding-top: 5px;
+	overflow: hidden;
+}
+.pollBlockIn p.pollQuestion {
+	color: #000000;
+	font-weight: bold;
+}
+.pollBlockIn ul.pollAnswers {
+	padding-top: 5px;
+}
+.pollBlockIn .pollAnswers li {
+	color: #000000;
+	font-weight: bold;
+}
+.pollBlockIn .pollAnswers li a, .pollBlockIn .pollAnswers li a:visited {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.pollBlockIn .pollAnswers li a:active, .pollBlockIn .pollAnswers li a:hover {
+	color: #f9c562;
+	text-decoration: none;
+}
+.pollBlock .pollProgressBlock {
+}
+.pollBlock .pollProgressBlock .pollThermoBlockOut {
+	float: left;
+	height: 18px;
+	line-height: 1px;
+	overflow: hidden;
+}
+.colMain .pollProgressBlock .pollThermoBlockOut {
+	width: 400px;
+}
+.colSide .pollProgressBlock .pollThermoBlockOut, .colSplit .pollProgressBlock .pollThermoBlockOut {
+	width: 150px;
+}
+.pollBlock .pollProgressBlock .pollThermoBlock {
+	width: 100%;
+	overflow: hidden;
+}
+.pollBlock .pollProgressBlock .pollThermo {
+	width: 100%;
+	height: 11px;
+	position: relative;
+	background: transparent url('./../img/layout/shdw-thermo-bg.gif') left top repeat-x;
+	overflow: hidden;
+}
+.colMain .pollProgressBlock .pollThermo {
+	margin-top: 6px;
+}
+.colSide .pollProgressBlock .pollThermo, .colSplit .pollProgressBlock .pollThermo {
+	margin-top: 4px;
+}
+.pollBlock .pollProgressBlock .pollThermoBgLft, .pollBlock .pollProgressBlock .pollThermoBgRgt {
+	display: block;
+	width: 4px;
+	height: 11px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	background-image: url('./../img/layout/shdw-thermo-bg.gif');
+	background-repeat: repeat-x;
+}
+.pollBlock .pollProgressBlock .pollThermoBgLft {
+	left: 0;
+	background-position: left -11px;
+}
+.pollBlock .pollProgressBlock .pollThermoBgRgt {
+	right: 0;
+	left: expression( parentNode.offsetWidth - this.offsetWidth);
+	background-position: -4px -11px;
+}
+.pollBlock .pollProgressBlock .pollThermoImg {
+	position: relative;
+	top: -11px;
+	top: expression( '-18px');
+	margin-right: 4px;
+}
+.pollBlock .pollProgressBlock .pollThermoImg img {
+	margin: 0;
+}
+.pollBlock .pollProgressBlock .pollPercent {
+	float: right;
+	width: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+.galTnBlock {
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+.galTnBlock.smallTn {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.galTnBlock.largeTn {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.galTnBlock.smallTn .galCard {
+	float: left;
+	margin: 10px 27px 10px 9px;
+}
+.galTnBlock.smallTn .galCard[class] {
+	margin: 10px 16px;
+}
+.colSide .galTnBlock.smallTn .galCard, .colSplit .galTnBlock.smallTn .galCard {
+	margin: 10px 60px 10px 20px;
+}
+.colSide .galTnBlock.smallTn .galCard[class], .colSplit .galTnBlock.smallTn .galCard[class] {
+	margin: 10px 40px;
+}
+.galTnBlock.largeTn .galCard {
+	float: left;
+	margin: 10px 21px 10px 7px;
+}
+.galTnBlock.largeTn .galCard[class] {
+	margin: 10px 14px;
+}
+.colSide .galTnBlock.largeTn .galCard, .colSplit .galTnBlock.largeTn .galCard {
+	margin: 10px 3px 10px 1px;
+}
+.colSide .galTnBlock.largeTn .galCard[class], .colSplit .galTnBlock.largeTn .galCard[class] {
+	margin: 10px 2px;
+}
+.galTnBlock .galCard .galCardImgBlockOut {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.galTnBlock .galCard .galCardImgBlockOut .galCardImgBlockIn {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+.galTnBlock .galCard .galCardImgBlockOut .galCardImgBlockIn a {
+	display: block;
+}
+.galTnBlock .galCard .galCardImgBlockOut .galCardImgBlockIn a img, .galTnBlock .galCard .galCardImgBlockOut .galCardImgBlockIn a:visited img {
+	z-index: 1;
+}
+.galTnBlock .galCard .galCardImgBlockOut .galCardImgBlockIn a:active img, .galTnBlock .galCard .galCardImgBlockOut .galCardImgBlockIn a:hover img {
+	border-color: #f9c562;
+}
+.galTnBlock .galCard .galCardImgBlockOut .galCardImgBlockIn a * {
+	cursor: pointer;
+}
+.smallTn .galCard .galCardImgBlockOut .galCardImgBlockIn a {
+	height: 118px;
+	width: 118px;
+}
+.largeTn .galCard .galCardImgBlockOut .galCardImgBlockIn a {
+	height: 200px;
+	width: 200px;
+}
+.galCard .galCardImgBlockOut .galCardImgBlockIn a {
+	padding: 2px;
+	border: 1px solid #939393;
+	position: relative;
+}
+* html .smallTn .galCard .galCardImgBlockOut .galCardImgBlockIn a {
+	height: 124px;
+	width: 124px;
+}
+* html .largeTn .galCard .galCardImgBlockOut .galCardImgBlockIn a {
+	height: 206px;
+	width: 206px;
+}
+.galCard .galCardImgBlockOut .galCardImgBlockIn a:hover {
+	border: 2px solid #f9c562;
+	padding: 1px;
+}
+.galCard .galCardImgBlockOut .galCardImgBlockIn a span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.galCard .galCardImgBlockOut .galCardImgBlockIn a span span {
+	position: relative;
+	left: -50%;
+	top: -50%;
+}
+html>/**/body .galCard .galCardImgBlockOut .galCardImgBlockIn a span {
+	position: static;
+}
+.galCard .galCardImgBlockOut .galCardImgBlockIn a img {
+	display: block;
+}
+html>/**/body .galCard .galCardImgBlockOut .galCardImgBlockIn a img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+.galTnBlock .galCard .galCardLink {
+	padding-top: 5px;
+	overflow: hidden;
+}
+.galTnBlock.smallTn .galCard .galCardLink {
+	width: 120px;
+}
+.galTnBlock.largeTn .galCard .galCardLink {
+	width: 202px;
+}
+.galTnBlock .galCard .galCardLink a, .galTnBlock .galCard .galCardLink a:visited {
+	margin: 0;
+	padding-right: 18px;
+	color: #f3a21c;
+	font-size: 0.85em;
+	font-weight: bold;
+	text-decoration: underline;
+	background: transparent url('./../img/layout/photo-arr-r-off.gif') right 70% no-repeat;
+}
+.galTnBlock .galCard .galCardLink a:active, .galTnBlock .galCard .galCardLink a:hover {
+	color: #f9c562;
+	background-image: url('./../img/layout/photo-arr-r-on.gif');
+}
+.colSide .galTnBlock .galCard .galCardLink a, .colSide .galTnBlock .galCard .galCardLink a:visited {
+	color: #705d26;
+	background-image: url('./../img/layout/photo-arr-r-sb-off.gif');
+}
+.colSide .galTnBlock .galCard .galCardLink a:active, .colSide .galTnBlock .galCard .galCardLink a:hover {
+	color: #331d10;
+	background-image: url('./../img/layout/photo-arr-r-sb-on.gif');
+}
+div.galDetail {
+}
+.galDetail .galListing {
+	margin-top: 10px;
+	text-align: center;
+}
+.galDetail .galListing .llAnch, .galDetail .galListing .rrAnch {
+	display: block;
+	width: auto;
+	color: #f3a21c;
+	font-weight: bold;
+	background-repeat: no-repeat;
+}
+.galDetail .galListing #slideshowControlArea {
+	width: 100%;
+	text-align: center;
+}
+.colMain .galDetail .galListing #slideshowControlArea {
+	width: 35%;
+	float: left;
+}
+.colMain .galDetail .galListing #slideshowControlArea[id] {
+	width: 40%;
+}
+.galDetail .galListing .llArea {
+	float: left;
+}
+.colMain .galDetail .galListing .llArea {
+	width: 30%;
+	float: left;
+	text-align: left;
+}
+.galDetail .galListing .rrArea {
+	float: right;
+}
+.colMain .galDetail .galListing .rrArea {
+	width: 30%;
+	float: left;
+	text-align: right;
+}
+.galDetail .galListing a#slideshowControl,		.galDetail .galListing a#slideshowControl:visited {
+	font-weight: bold;
+	color: #f3a21c;
+}
+.colSide .galDetail .galListing a#slideshowControl,			.colSide .galDetail .galListing a#slideshowControl:visited {
+	color: #705d26;
+}
+.galDetail .galListing a#slideshowControl:hover,		.galDetail .galListing a#slideshowControl:active {
+	color: #f9c562;
+}
+.colSide .galDetail .galListing a#slideshowControl:hover,			.colSide .galDetail .galListing a#slideshowControl:active {
+	color: #331d10;
+}
+.galDetail .galListing .llAnch {
+}
+.galDetail .galListing .rrAnch {
+}
+.galDetail .galListing a.llAnch, .galDetail .galListing a.llAnch:visited {
+	padding-left: 20px;
+	background-position: left center;
+	background-image: url('./../img/layout/photo-arr-l-off.gif');
+}
+.galDetail .galListing a.llAnch:active, .galDetail .galListing a.llAnch:hover {
+	color: #f9c562;
+	background-image: url('./../img/layout/photo-arr-l-on.gif');
+}
+.galDetail .galListing a.rrAnch, .galDetail .galListing a.rrAnch:visited {
+	padding-right: 20px;
+	background-position: right center;
+	background-image: url('./../img/layout/photo-arr-r-off.gif');
+}
+.galDetail .galListing a.rrAnch:active, .galDetail .galListing a.rrAnch:hover {
+	color: #f9c562;
+	background-image: url('./../img/layout/photo-arr-r-on.gif');
+}
+.colSide .galDetail .galListing a.llAnch, .colSide .galDetail .galListing a.llAnch:visited {
+	color: #705d26;
+	background-image: url('./../img/layout/photo-arr-l-sb-off.gif');
+}
+.colSide .galDetail .galListing a.llAnch:active, .colSide .galDetail .galListing a.llAnch:hover {
+	color: #331d10;
+	background-image: url('./../img/layout/photo-arr-l-sb-on.gif');
+}
+.colSide .galDetail .galListing a.rrAnch, .colSide .galDetail .galListing a.rrAnch:visited {
+	color: #705d26;
+	background-image: url('./../img/layout/photo-arr-r-sb-off.gif');
+}
+.colSide .galDetail .galListing a.rrAnch:active, .colSide .galDetail .galListing a.rrAnch:hover {
+	color: #331d10;
+	background-image: url('./../img/layout/photo-arr-r-sb-on.gif');
+}
+.galDetail .galListing .llAnch span, .galDetail .galListing .rrAnch span {
+	display: none;
+}
+.galDetail .galCard {
+	float: left;
+	margin: 10px 10px 10px 4px;
+}
+.galDetail .galCard[class] {
+	margin: 10px 7px;
+}
+.colMain .galDetail .galCard {
+	float: left;
+	margin: 10px 21px 10px 7px;
+}
+.colMain .galDetail .galCard[class] {
+	margin: 10px 14px;
+}
+.galDetail .galCard .galImgBlockOut {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.galDetail .galCard .galImgBlockOut .galImgBlockIn {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+.galDetail .galCard .galImgBlockOut .galImgBlockIn a {
+	display: block;
+}
+.galDetail .galCard .galImgBlockOut .galImgBlockIn a img,						.galDetail .galCard .galImgBlockOut .galImgBlockIn a:visited img {
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+	border: 1px solid #939393;
+	z-index: 1;
+}
+.galDetail .galCard .galImgBlockOut .galImgBlockIn a:active img,							.galDetail .galCard .galImgBlockOut .galImgBlockIn a:hover img {
+	border-color: #f9c562;
+}
+.galDetail .galCard .galImgBlockOut .galImgBlockIn a * {
+	cursor: pointer;
+}
+.colMain .galDetail .galCard .galImgBlockOut,				.colMain .galDetail .galCard .galImgBlockOut .galImgBlockIn {
+	width: 452px;
+}
+.colSide .galDetail .galCard .galImgBlockOut,				.colSide .galDetail .galCard .galImgBlockOut .galImgBlockIn,				.colSplit .galDetail .galCard .galImgBlockOut,				.colSplit .galDetail .galCard .galImgBlockOut .galImgBlockIn {
+	width: 202px;
+}
+.galDetail .galInfoBlock {
+}
+.colSide .galDetail .galInfoBlock {
+	color: #000000;
+}
+.galDetail .galInfoBlock h3 {
+	padding-bottom: 0.5em;
+	font-size: 1.1em;
+}
+.galDetail .galInfoBlock .galImgDesc {
+}
+.galDetail .galInfoBlock .galImgDate {
+	margin-top: 1em;
+	color: #999999;
+	font-style: italic;
+}
+.galDetail .backLink a,	.galDetail .backLink a:visited {
+	background-image: url('./../img/layout/photo-arr-up-off.gif');
+	color: #f3a21c;
+}
+.galDetail .backLink a:hover,	.galDetail .backLink a:active {
+	background-image: url('./../img/layout/photo-arr-up-on.gif');
+	color: #f9c562;
+}
+.colSide .galDetail .backLink a,	.colSide .galDetail .backLink a:visited {
+	background-image: url('./../img/layout/photo-arr-up-sb-off.gif');
+	color: #705d26;
+}
+.colSide .galDetail .backLink a:hover,	.colSide .galDetail .backLink a:active {
+	background-image: url('./../img/layout/photo-arr-up-sb-on.gif');
+	color: #331d10;
+}
+.sitemap {
+	margin: 10px 0;
+}
+.sitemap a, .sitemap a:visited {
+	color: #f3a21c;
+	text-decoration: underline;
+}
+.sitemap a:active, .sitemap a:hover {
+	color: #f9c562;
+}
+.colSide .sitemap a, .colSide .sitemap a:visited {
+	color: #705d26;
+}
+.colSide .sitemap a:active, .colSide .sitemap a:hover {
+	color: #331d10;
+}
+.sitemap ul {
+	margin: 2px 0 0 0;
+}
+.sitemap ul li {
+	padding: 3px 0 0 15px;
+	font-weight: bold;
+	background: transparent url('./../img/layout/wsw-li.gif') left 8px no-repeat;
+}
+.colSide .sitemap ul li {
+	background-image: url('./../img/layout/wsw-li2.gif');
+}
+.sitemap ul li ul {
+	margin: 2px 0 0 0;
+	padding-left: 30px;
+}
+.colSide .sitemap ul li ul, .colSplit .sitemap ul li ul {
+	padding-left: 10px;
+}
+.faqCards {
+	padding: 20px 0;
+}
+.colSide .faqCards, .colSplit .faqCards {
+	padding: 10px 0;
+}
+.faqCards .faqCard {
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+.faqCards .faqCard.row1 {
+	background-color: #705d26;
+}
+.colSide .faqCards .faqCard.row1 .wsw {
+	color: #ffffff;
+}
+.faqCards .faqCard .faqCardIn {
+	margin: 0 20px;
+}
+.faqCards .faqCard .faqCardIn h3 {
+	font-size: 1.3em;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #ed951c;
+	cursor: pointer;
+	background: transparent no-repeat right center;
+	padding-right: 20px;
+}
+.colSide .faqCards .row0 .faqCardIn h3 {
+	color: #705d26;
+}
+.faqCards .faqCard .faqCardIn h3:hover,			.faqCards .faqCard .faqCardIn h3.hover {
+	color: #f9c562;
+}
+.colSide .faqCards .row0 .faqCardIn h3:hover,				.colSide .faqCards .row0 .faqCardIn h3.hover {
+	color: #331d10;
+}
+.colSide .faqCards .faqCard h3, .colSplit .faqCards .faqCard h3 {
+	font-weight: bold;
+}
+.faqCards .faqCard h3.opened {
+	background-image: url('./../img/layout/faqUp.png');
+}
+.faqCards .faqCard h3.closed {
+	background-image: url('./../img/layout/faqDown.png');
+}
+.faqCards .faqCard .faqCardIn h3 a, .faqCards .faqCard .faqCardIn h3 a:visited {
+	color: #ed951c;
+}
+.colSide .faqCards .row0 .faqCardIn h3 a, .colSide .faqCards .row0 .faqCardIn h3 a:visited {
+	color: #705d26;
+}
+.faqCards .faqCard .faqCardIn h3 a:active, .faqCards .faqCard .faqCardIn h3 a:hover {
+	color: #f9c562;
+}
+.colSide .faqCards .row0 .faqCardIn h3 a:active, .colSide .faqCards .row0 .faqCardIn h3 a:hover {
+	color: #331d10;
+}
+.faqCards .faqCard .faqCardIn .faqText {
+}
+.artCards {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.colSide .artCards, .colSplit .artCards {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.artCards .artCard {
+	padding: 12px 0;
+}
+.artCards .row1 {
+	background-color: #705d26;
+}
+.colSide .artCards .row0 .wsw {
+	color: #ffffff;
+}
+.artCards .artCard .artCardIn {
+	margin: 0 15px;
+}
+.artCards .artCard .artCardIn .artDate {
+	color: #939393;
+}
+.colSide .artCards .row0 .artCardIn .artDate {
+	color: #333333;
+}
+.artCards .artCard .artCardIn h3 {
+	padding: 0.2em 0 0.15em 0;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+.colSide .artCards .artCard h3,				.colSplit .artCards .artCard h3 {
+	font-weight: bold;
+}
+.artCards .artCard .artCardIn h3 a,				.artCards .artCard .artCardIn h3 a:visited {
+	color: #ed951c;
+}
+.colSide .artCards .row0 .artCardIn h3 a, .colSide .artCards .row0 .artCardIn h3 a:visited {
+	color: #705d26;
+}
+.artCards .artCard .artCardIn h3 a:active, .artCards .artCard .artCardIn h3 a:hover {
+	color: #f9c562;
+}
+.colSide .artCards .row0 .artCardIn h3 a:active, .colSide .artCards .row0 .artCardIn h3 a:hover {
+	color: #331d10;
+}
+.artCards .artCard .artCardIn .artPerex {
+}
+.prodCards {
+	margin: 15px 0;
+}
+.colSide .prodCards, .colSplit .prodCards {
+	margin-top: 10px;
+}
+.prodCards .prodCard {
+	padding: 20px 0;
+}
+.prodCards .row1 {
+}
+.prodCards .prodCard .prodCardIn {
+	margin: 0 15px;
+}
+.prodCards .prodCard .prodImgOut {
+	position: relative;
+	float: left;
+	width: 120px;
+	overflow: hidden;
+	margin: 0 10px 10px 0;
+}
+.prodCards .withoutImage .prodImgOut {
+	display: none;
+}
+.colSide .prodCards .prodCard .prodImgOut {
+	margin-bottom: 0.5em;
+	width: 186px;
+}
+.colSplit .prodCards .prodCard .prodImgOut {
+	margin-bottom: 0.5em;
+	width: 176px;
+}
+.prodCards .prodCard .prodImgOut .prodImgIn {
+	text-align: center;
+}
+.prodCards .prodCard .prodImgOut .prodImgIn a {
+}
+.prodCards .prodCard .prodImgOut .prodImgIn a img, .prodCards .prodCard .prodImgOut .prodImgIn a:visited img {
+	margin: 0 auto;
+	border: 1px solid #939393;
+}
+.prodCards .prodCard .prodImgOut .prodImgIn a:active img, .prodCards .prodCard .prodImgOut .prodImgIn a:hover img {
+	border-color: #f9c562;
+}
+.prodCards .prodCard .prodImgOut .prodImgIn a * {
+	cursor: pointer;
+}
+.colSide .prodCards .row1 {
+	color: #000000;
+}
+.prodCards .prodCard .prodCardIn .prodInfoOut {
+	width: 100%;
+}
+.prodCards .prodCard.withImage .prodCardIn .prodInfoOut {
+	margin-left: 0;
+}
+.prodCards .prodCard .prodCardIn .prodInfoOut[class] {
+	width: auto;
+}
+.colSide .prodCards .prodCardIn .prodInfoOut, .colSplit .prodCards .prodCardIn .prodInfoOut {
+	margin-left: 0;
+}
+.prodCards .prodCard .prodCardIn .prodInfoOut h3 {
+	font-size: 1.3em;
+	font-weight: normal;
+}
+.colSide .prodCards .prodCard .prodCardIn .prodInfoOut h3,				.colSplit .prodCards .prodCard .prodCardIn .prodInfoOut h3 {
+	font-weight: bold;
+}
+.prodCards .prodCard .prodCardIn .prodInfoOut h3 a, .prodCards .prodCard .prodCardIn .prodInfoOut h3 a:visited {
+	color: #f3a21c;
+}
+.prodCards .prodCard .prodCardIn .prodInfoOut h3 a:active, .prodCards .prodCard .prodCardIn .prodInfoOut h3 a:hover {
+	color: #f9c562;
+}
+.colSide .prodCards .prodCard.row1 .prodCardIn .prodInfoOut h3 a, .colSide .prodCards .prodCard.row1 .prodCardIn .prodInfoOut h3 a:visited {
+	color: #705d26;
+}
+.colSide .prodCards .prodCard.row1 .prodCardIn .prodInfoOut h2 a:active, .colSide .prodCards .prodCard.row1 .prodCardIn .prodInfoOut h2 a:hover {
+	color: #331d10;
+}
+.prodCards .prodCard .prodCardIn .prodInfoOut .prodDesc {
+	margin-top: 0.3em;
+}
+.prodDetail {
+	margin: 10px 0;
+	overflow: hidden;
+}
+.prodDetail h3 {
+	font-size: 1.1em;
+	text-align: center;
+}
+.colSide .prodDetail h3 {
+	color: #000000;
+}
+.prodDetail .prodDetailImgOut {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.prodDetail .prodDetailImgOut img {
+	margin: 15px auto;
+}
+.prodDetail .prodDetailImgOut a {
+	display: block;
+}
+.prodDetail .prodDetailImgOut a img, .prodDetail .prodDetailImgOut a:visited img {
+	border: 1px solid #939393;
+}
+.prodDetail .prodDetailImgOut a:active img, .prodDetail .prodDetailImgOut a:hover img {
+	border-color: #f9c562;
+}
+.prodDetail .prodDetailDescOut,
+.rbcVariants {
+	padding: 15px 0;
+	background-color: #705d26;
+}
+.prodDetail .prodDetailDescOut .prodDetailDescIn,
+.rbcVariants .rbcVariantsIn {
+	margin: 0 20px;
+}
+.prodDetail .prodDetailDescOut .prodDetailDescIn .wsw {
+	width: 100%;
+}
+.colSide .prodDetail .prodDetailDescOut .prodDetailDescIn .wsw {
+	color: #ffffff;
+}
+.colSide .prodDetail .prodDetailDescOut .prodDetailDescIn .wsw ul li {
+	background-image: url('./../img/layout/wsw-li.gif');
+}
+.ftSearch form {
+	display: block;
+	padding: 10px 0;
+	border-bottom: 1px solid #5b5858;
+}
+.ftSearch[class] {
+	=padding: 10px;
+}
+.ftSearch form fieldset {
+	display: block;
+	margin: 0 10px;
+	padding: 0;
+	border: none;
+}
+.ftSearch form fieldset legend {
+	display: none;
+}
+.ftSearch form fieldset input, .ftSearch form fieldset select {
+	border: 1px solid #b8b8b8;
+	background: #fdfef8 url('./../img/layout/frm-inp-bg.gif') left bottom repeat-x;
+}
+.ftSearch form fieldset label {
+	color: #ffffff;
+}
+.ftSearch form fieldset .ftSearchQuery {
+}
+.ftSearch form fieldset .ftSearchQuery label {
+}
+.ftSearch form fieldset .ftSearchQuery input {
+	font: 1em/1.33 "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	height: 20px;
+}
+html>body .ftSearch form fieldset .ftSearchQuery input {
+	height: 18px;
+	padding: 0 1px;
+}
+.ftSearch form fieldset .ftSearchQuery select {
+	font: 1em/1.33 "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	height: 18px;
+}
+.colMain .ftSearch form fieldset .ftSearchQuery {
+	width: 200px;
+	float: left;
+	overflow: hidden;
+}
+.colMain .ftSearch form fieldset .ftSearchQuery label {
+	display: block;
+}
+.colMain .ftSearch form fieldset .ftSearchQuery input {
+	display: block;
+	width: 98%;
+	margin-top: 5px;
+}
+.colSide .ftSearch form fieldset .ftSearchQuery, .colSplit .ftSearch form fieldset .ftSearchQuery {
+}
+.colSide .ftSearch form fieldset .ftSearchQuery label, .colSplit .ftSearch form fieldset .ftSearchQuery label {
+}
+.colSide .ftSearch form fieldset .ftSearchQuery input, .colSplit .ftSearch form fieldset .ftSearchQuery input {
+	margin-top: 2px;
+	width: 98%;
+}
+.ftSearch form fieldset .ftSearchType {
+}
+.ftSearch form fieldset .ftSearchType label {
+}
+.ftSearch form fieldset .ftSearchType select {
+}
+.colMain .ftSearch form fieldset .ftSearchType {
+	width: 200px;
+	float: left;
+	margin-left: 10px;
+	overflow: hidden;
+}
+.colMain .ftSearch form fieldset .ftSearchType label {
+	display: block;
+}
+.colMain .ftSearch form fieldset .ftSearchType select {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+}
+.colSide .ftSearch form fieldset .ftSearchType, .colSplit .ftSearch form fieldset .ftSearchType {
+	margin-top: 5px;
+}
+.colSide .ftSearch form fieldset .ftSearchType label, .colSplit .ftSearch form fieldset .ftSearchType label {
+}
+.colSide .ftSearch form fieldset .ftSearchType select, .colSplit .ftSearch form fieldset .ftSearchType select {
+	margin-top: 2px;
+	width: 192px;
+}
+.colSide[class] .ftSearch form fieldset .ftSearchType select, .colSplit[class] .ftSearch form fieldset .ftSearchType select {
+	width: 195px;
+	=width: 196px;
+}
+.ftSearch form fieldset .ftGoBtn {
+}
+.ftSearch form fieldset .ftGoBtn {
+	overflow: hidden;
+}
+.ftSearch form fieldset .ftGoBtn button {
+	width: 30px;
+	height: 28px;
+	margin-top: 18px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.colMain .ftSearch form fieldset .ftGoBtn {
+	float: left;
+	margin-left: 10px;
+}
+.colSide .ftSearch form fieldset .ftGoBtn, .colSplit .ftSearch form fieldset .ftGoBtn {
+	margin-top: 5px;
+	float: right;
+}
+.colSide .ftSearch form fieldset .ftGoBtn button, .colSplit .ftSearch form fieldset .ftGoBtn button {
+	margin: 0;
+}
+.ftPageCards {
+	padding: 20px 0;
+}
+.colSide .ftPageCards, .colSplit .ftPageCards {
+	padding: 10px 0;
+}
+.ftPageCards .ftPageCard {
+	padding: 10px 0 10px 0;
+}
+.ftPageCards .row1 {
+	background-color: #705d26;
+}
+.ftPageCards .ftPageCardIn {
+	margin: 0 20px;
+}
+.ftPageCards .ftPageCard h3 {
+	font-size: 1.2em;
+}
+.ftPageCards .ftPageCard h3 a, .ftPageCards .ftPageCard h3 a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+.ftPageCards .ftPageCard h3 a:active, .ftPageCards .ftPageCard h3 a:hover {
+	text-decoration: underline;
+}
+.ftPageCards .ftPageCard .ftPageUrl {
+	margin-top: 3px;
+}
+.ftPageCards .ftPageCard .ftPageUrl a, .ftPageCards .ftPageCard .ftPageUrl a:visited {
+	color: #f3a21c;
+	font-weight: bold;
+	padding-right: 18px;
+	background: transparent url('./../img/layout/photo-arr-r-off.gif') right 65% no-repeat;
+}
+.ftPageCards .ftPageCard .ftPageUrl a:active, .ftPageCards .ftPageCard .ftPageUrl a:hover {
+	color: #f9c562;
+	background-image: url('./../img/layout/photo-arr-r-on.gif');
+}
+.ftPageCards .ftPageCard .ftPageText {
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+.ftPageCards .ftPageCard .ftPageText .ftPageHl {
+	padding: 0 2px;
+	font-weight: bold;
+}
+.ftPageCards .ftPageCard .ftPageSize {
+	margin-top: 3px;
+	font-weight: bold;
+	text-align: right;
+	color: #a7a7a7;
+}
+.ftBox {
+}
+.ftBox label {
+	display: none;
+}
+.ftBox .ftSearchQuery {
+}
+.ftBox .ftSearchQuery input {
+	width: 170px;
+	float: left;
+	border: 1px solid #b8b8b8;
+	background: #ffffff url('./../img/layout/ft-box-inp-bg.gif') left bottom repeat-x;
+	font: 1em/1.33 "Trebuchet MS", Tahoma, Verdana, sans-serif;
+}
+.ftBox[class] .ftSearchQuery input {
+	=width: 168px;
+}
+.ftBox .ftSearchQuery button {
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	background-image: none;
+	cursor: pointer;
+}
+.ftBox .ftSearchQuery button img {
+}
+.ftBox .ftSearchAdvanced {
+	margin-top: 5px;
+}
+.ftBox .ftSearchAdvanced a, .ftBox .ftSearchAdvanced a:visited {
+	margin: 0;
+	padding-right: 18px;
+	color: #000000;
+	font-size: 0.95em;
+	font-weight: bold;
+	text-decoration: underline;
+	background: transparent url('./../img/layout/ft-box-a-bg.gif') right 50% no-repeat;
+}
+.ftBox .ftSearchAdvanced a:active, .ftBox .ftSearchAdvanced a:hover {
+	background-image: url('./../img/layout/photo-arr-r-sb-on.gif');
+}
+.noRecords {
+	margin-bottom: 20px;
+}
+.rbcContentBlock .empty {
+	margin-bottom: 5px;
+}
+.disPosts {
+	width: 100%;
+	padding: 10px 0;
+}
+.colSide .disPosts, .colSplit .disPosts {
+	padding: 10px 0;
+}
+.disReply {
+	padding: 10px 0 0 0;
+}
+.disPosts .disPostCard {
+}
+.disPosts .disPostCard .disPostIndent {
+	width: auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.disPosts .disPostCard .disPostIndent .disPostCardOut {
+	padding: 2px;
+	background-color: #705d26;
+}
+.disPosts .level-1 .disPostIndent .disPostCardOut {
+	background-color: #705d26;
+}
+.disPosts .disPostCard .disPostIndent .disPostCardIn {
+	width: 100%;
+	overflow: hidden;
+	background-color: #705d26;
+}
+.disPosts .disPostCard .disPostIndent .disPostCardIn[class] {
+	width: auto;
+}
+.disPosts .level-1 .disPostIndent .disPostCardIn {
+	background-color: #4a3b0f;
+}
+.disPosts .level-1 .disPostIndent {
+	margin-left: 0;
+}
+.disPosts .level-2 .disPostIndent {
+	margin-left: 30px;
+}
+.disPosts .level-3 .disPostIndent {
+	margin-left: 60px;
+}
+.disPosts .level-4 .disPostIndent {
+	margin-left: 90px;
+}
+.disPosts .level-5 .disPostIndent {
+	margin-left: 120px;
+}
+.disPosts .level-6 .disPostIndent {
+	margin-left: 150px;
+}
+.disPosts .disPostIndent {
+	margin-left: 180px;
+}
+.colSide .disPosts .level-1 .disPostIndent {
+	margin-left: 0;
+}
+.colSide .disPosts .level-2 .disPostIndent {
+	margin-left: 10px;
+}
+.colSide .disPosts .level-3 .disPostIndent {
+	margin-left: 20px;
+}
+.colSide .disPosts .level-4 .disPostIndent {
+	margin-left: 30px;
+}
+.colSide .disPosts .disPostIndent {
+	margin-left: 40px;
+}
+.colSplit .disPosts .level-1 .disPostIndent {
+	margin-left: 0;
+}
+.colSplit .disPosts .level-2 .disPostIndent {
+	margin-left: 10px;
+}
+.colSplit .disPosts .level-3 .disPostIndent {
+	margin-left: 20px;
+}
+.colSplit .disPosts .level-4 .disPostIndent {
+	margin-left: 30px;
+}
+.colSplit .disPosts .disPostIndent {
+	margin-left: 40px;
+}
+.disPosts .disPostCard table.disHead {
+	width: 100%;
+	padding: 0;
+	font-size: 1em;
+	border-collapse: collapse;
+}
+.disPosts .disPostCard table.disHead tr td {
+	text-align: left;
+	vertical-align: top;
+	margin: 0;
+	padding: 2px 5px;
+	overflow: hidden;
+	border: none;
+}
+.disPosts .disPostCard table.disHead tr td.disHeadLbl {
+}
+.disPosts .disPostCard table.disHead tr td.disHeadDate {
+	font-weight: bold;
+	font-style: italic;
+}
+.disPosts .disPostCard table.disHead tr td.disHeadAuthor {
+	font-weight: bold;
+	font-style: italic;
+}
+.disPosts .disPostCard table.disHead tr td.disHeadTitle {
+	font-weight: bold;
+}
+.disPosts .disPostCard .disPostText {
+	margin: 2px;
+	padding: 15px;
+	color: #000000;
+	background-color: #ffffff;
+}
+.colSide .disPosts .disPostCard .disPostText, .colSplit .disPosts .disPostCard .disPostText {
+	padding: 5px;
+}
+.disPosts .disPostCard .disPostText p {
+	width: 100%;
+	font-size: 0.9em;
+	overflow: hidden;
+}
+.disPosts .disPostCard .disPostText[class] p {
+	width: auto;
+}
+.colSide .disPosts .disPostCard .disPostText p, .colSplit .disPosts .disPostCard .disPostText p {
+	margin: 0 5px;
+	font-size: 1em;
+}
+.disPosts .disPostCard .disPostReply {
+	font-size: 1.1em;
+	padding: 5px 5px;
+	text-align: right;
+}
+.disPosts .disPostCard .disPostReply a, .disPosts .disPostCard .disPostReply a:visited {
+	color: #f3a21c;
+	font-weight: bold;
+	padding-right: 18px;
+	background: transparent url('./../img/layout/photo-arr-r-off.gif') right 65% no-repeat;
+}
+.disPosts .disPostCard .disPostReply a:active, .disPosts .disPostCard .disPostReply a:hover {
+	color: #f9c562;
+	background-image: url('./../img/layout/photo-arr-r-on.gif');
+}
+.disForm .frmTable,.privateAccessForm form table {
+	width: 478px;
+	padding: 0;
+	margin-bottom: 15px;
+	font-size: 1em;
+	border-collapse: collapse;
+}
+.colSide .disForm .frmTable, .colSplit .disForm .frmTable {
+	margin: 5px 0;
+	width: 216px;
+}
+.colSide .disForm .frmTable {
+	color: #000000;
+}
+.disForm .frmTable tr td,.privateAccessForm form tr td {
+	vertical-align: top;
+	padding: 2px 5px;
+}
+.disForm .frmTable tr td.cLbl {
+	width: 35%;
+}
+.disForm .frmTable tr .cLbl label {
+	font-weight: bold;
+}
+.disForm .frmTable tr.wrong .cLbl label {
+	color: #da4025;
+}
+.disForm .frmTable tr td.cEdit {
+	width: 65%;
+	text-align: right;
+}
+
+.disForm .frmTable tr .cEdit input, .privateAccessForm input {
+	width: 90%;
+	background-color: #ffffff;
+	border: 1px solid #B3B3B3;
+	font: 1em/1.33 "Trebuchet MS", Tahoma, Verdana, sans-serif;
+}
+.disForm .frmTable tr.wrong .cEdit input {
+	background: #f2ecab url('./../img/layout/frm-inp-bad-bg.gif') left bottom repeat-x;
+}
+.disForm .frmTable tr td.cMemo {
+	width: 100%;
+	text-align: right;
+}
+.disForm .frmTable tr .cMemo textarea {
+	font: 1em/1.33 "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	width: 99%;
+	height: 9em;
+	overflow: auto;
+	border: 1px solid #b3b3b3;
+	background-color: #ffffff;
+}
+.disForm .frmTable tr.wrong .cMemo textarea {
+	background-color: #f2ecab;
+}
+.disForm .frmTable tr td.importantInfoBlock {
+	width: 75%;
+}
+.disForm .frmTable tr .importantInfoBlock p {
+}
+.disForm .frmTable tr td.cSubmit {
+	width: 25%;
+}
+.disForm .frmTable tr .cSubmit button {
+	display: block;
+	width: auto;
+	width: expression( '80px');
+	height: 22px;
+	float: right;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.disForm .frmTable tr .cSubmit button .btnFill {
+	display: block;
+	width: 100%;
+	height: 22px;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-weight: bold;
+	color: #000000;
+	background: #c4dd63 url('./../img/layout/btn-bg.gif') left top repeat-x;
+	border: none;
+}
+.disForm .frmTable tr .cSubmit button:hover .btnFill,			 
+.disForm .frmTable tr .cSubmit button.hover .btnFill,			
+.disForm .frmTable tr .cSubmit button:hover .btnFill .btnBgA,			
+.disForm .frmTable tr .cSubmit button.hover .btnFill .btnBgA,			
+.disForm .frmTable tr .cSubmit button:hover .btnFill .btnBgB,			 
+.disForm .frmTable tr .cSubmit button.hover .btnFill .btnBgB {
+	background-image: url('./../img/layout/buttonHover.png');
+}
+.disForm .frmTable tr .cSubmit button .btnFill .btnCaption {
+	padding: 0 6px;
+	line-height: 22px;
+}
+.disForm .frmTable tr .cSubmit button .btnFill .btnBgA,
+.disForm .frmTable tr .cSubmit button .btnFill .btnBgB {
+	display: block;
+	width: 5px;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	background-image: url('./../img/layout/btn-bg.gif');
+	background-repeat: no-repeat;
+}
+.disForm .frmTable tr .cSubmit button .btnFill .btnBgA {
+	left: 0;
+	background-position: 0 -22px;
+}
+.colSide .disForm .frmTable tr .cSubmit button .btnFill .btnBgA {
+	background-position: -10px -22px;
+}
+.disForm .frmTable tr .cSubmit button .btnFill .btnBgB {
+	right: 0;
+	background-position: -5px -22px;
+}
+.colSide .disForm .frmTable tr .cSubmit button .btnFill .btnBgB {
+	background-position: -15px -22px;
+}
+.disFormErrors {
+	margin: 15px 0 10px 0;
+	padding-bottom: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid #5a5859;
+}
+.colSide .disFormErrors, .colSplit .disFormErrors {
+	margin: 5px 0 10px 0;
+	padding-bottom: 10px;
+}
+.disFormErrors p {
+}
+.colSide .disFormErrors p {
+	color: #000000;
+}
+.disFormErrors ul {
+	margin-top: 10px;
+	list-style-type: disc;
+}
+
+.disFormErrors ul li, .privateAccessForm .error {
+	list-style-type: disc;
+	margin-left: 20px;
+	color: #da4025;
+}
+.contact h3,
+.menuBlock h3 {
+	margin-bottom: 0.3em;
+	padding: 0 10px;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid #5c5859;
+	color: #5c5859;
+}
+.contact h3:first-letter,
+.menuBlock h3:first-letter {
+	font-size: 1.5em;
+}
+.colMain .contact h3 {
+}
+.colSplit .contact h3 {
+	padding: 5px;
+}
+.colSide .contact h3,
+.colSide .menuBlock h3 {
+	padding: 0;
+}
+.contact .wsw .contactName {
+	color: #5b4611;
+	font-weight: bold;
+}
+.contact .wsw .contactMail {
+	margin-left: 28px;
+}
+.contact .wsw .contactPhone {
+	margin-left: 28px;
+}
+.contact .wsw .contactAddress {
+	margin-left: 28px;
+	padding: 5px 0;
+	font-style: normal;
+}
+.contact .wsw .icon {
+	height: 18px;
+	width: 18px;
+	background: transparent scroll no-repeat left bottom;
+	padding: 7px 0 0 0;
+	float: left;
+}
+.contact .wsw .iconCleaner {
+	display: block;
+	clear: both;
+}
+.contact .wsw .iconMail {
+	background-image: url('./../img/layout/iconMail.png');
+}
+.contact .wsw .iconPhone {
+	background-image: url('./../img/layout/iconPhone.png');
+}
+.contact .wsw .iconAddress {
+	background-image: url('./../img/layout/iconAddress.png');
+}
+#languageSelect {
+	float: right;	
+	text-align: right;
+	margin-left: 7px;	
+}
+#languageSelect ul {
+	display: none;
+}
+#languageSelect #languageFlags a {
+	float: left;
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-decoration: none;
+	background: transparent center center no-repeat;
+	margin: 0 0 0 5px;
+}
+#languageSelect #languageList
+{
+	margin-top: 2px;
+}
+#languageSelect #languageList a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.85em;
+	font-weight: bold;
+	border-left: 1px solid #9A7E37;
+	padding: 0 9px 0 10px;		
+}
+#languageSelect #languageList a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+#languageSelect #languageList .separator {
+	display: none;
+}
+
+.privateAccessForm label {
+	display: block;
+	width: 160px;
+	font-weight: bold;
+}
+
+.privateAccessForm input {
+	width: 271px;
+}
+
+.privateAccessForm fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.privateAccessForm .error,
+.privateAccessForm p
+{
+	margin-bottom: 10px;
+}
+
+.fakeButton input {
+	/*display: block;*/
+	width: auto;
+	overflow: visible;
+	height: 21px;
+	/*float: right;*/
+	position: relative;
+	padding: 0 6px;
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	color: #000000;
+}
+.fakeButton
+{
+	display: block;
+	
+}
+	
+
+.fakeButton .btnFill {
+	display: block;
+	/*width: 100%;*/
+	height: 22px;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background: #4d5bb4 url('./../img/layout/btn-bg.gif') left top repeat-x;
+	border: none;
+	float: left;
+}
+
+.shopTable table .fakeButton .btnFill
+{
+	background-image: url('./../img/layout/buttonTable.png');
+}
+
+.fakeButton .btnFill:hover,			 
+.fakeButton .btnFill.hover,			
+.fakeButton .btnFill:hover .btnBgA,			
+.fakeButton .btnFill.hover .btnBgA,			
+.fakeButton .btnFill:hover .btnBgB,			 
+.fakeButton .btnFill.hover .btnBgB {
+	background-image: url('./../img/layout/buttonHover.png');
+}
+
+.shopTable table .fakeButton .btnFill:hover,			 
+.shopTable table .fakeButton .btnFill.hover,			
+.shopTable table .fakeButton .btnFill:hover .btnBgA,			
+.shopTable table .fakeButton .btnFill.hover .btnBgA,			
+.shopTable table .fakeButton .btnFill:hover .btnBgB,			 
+.shopTable table .fakeButton .btnFill.hover .btnBgB {
+	background-image: url('./../img/layout/buttonTableHover.png');
+}
+
+.fakeButton .btnFill .btnCaption {
+	/*padding: 0 6px;*/
+	line-height: 22px;
+}
+.fakeButton .btnFill .btnBgA,
+.fakeButton .btnFill .btnBgB {
+	display: block;
+	width: 5px;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	background-image: url('./../img/layout/btn-bg.gif');
+	background-repeat: no-repeat;
+}
+
+.shopTable table .fakeButton .btnFill .btnBgA,
+.shopTable table .fakeButton .btnFill .btnBgB
+{
+	background-image: url('./../img/layout/buttonTable.png');
+}
+
+.fakeButton .btnFill .btnBgA {
+	left: 0;
+	background-position: 0 -22px;
+}
+.fakeButton .btnFill .btnBgB {
+	right: 0;
+	background-position: -5px -22px;
+}
+
+.addToBasket .fakeButton
+{
+	float: right;
+}
+
+.shop .price del
+{
+	color: #606060;
+}
+
+.shop .price ins
+{
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 0 0 0.5em;
+	padding: 0;
+}
+
+
+.shop .sale
+{
+	color: #FF6E6E;
+	font-weight: bold;
+}
+
+.shopList p.price
+{
+	margin: 0.5em 0;
+}	
+
+.shopTable table .fakeButton .btnFill .btnBgA {
+	background-position: -10px -22px;
+}
+.shopTable table .fakeButton .btnFill .btnBgB {
+	background-position: -15px -22px;
+}
+
+.shopTable table ins,
+.shopTable table a
+{
+	font-weight: normal !important;
+}
+
+
+.shopTable table
+{
+	font-size: 0.9em;
+}
+
+.shopTable td.headPrice
+{
+	text-align: right !important;
+}
+
+.shopTable .inputTable
+{
+	width: 16%;
+}
+
+.shopTable td.price
+{
+	width: 20%;
+	text-align: right !important;
+}
+
+.shopGallery h3
+{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.shopGallery h3 a
+{
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.shopGallery .galCardLink
+{
+	text-align: center;
+}
+
+.shopGallery .price,
+.shopGallery .description,
+.shopGallery .sale
+{
+	font-size: 0.9em;
+}
+
+.shopGallery .fakeButton
+{
+	position: relative;
+	left: -50%;
+}
+
+.shopGallery .fakeButton .btnFill
+{
+	position: relative; 
+	left: 50%;
+}
+
+/* webkit only */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	
+	.shopGallery .fakeButton
+	{
+		width: 100%;
+		left: 0;
+	}
+}
+
+.shopGallery .price
+{
+	margin-top: 10px;
+}
+
+.shopGallery .description
+{
+	height: 3.9em;
+	overflow: hidden;
+}
+
+.shopDetail .prodDetailImgOut 
+{
+	width: 50% !important;
+}
+
+.shopDetail .price
+{
+	float: right;
+}
+
+.shopDetail .price
+{
+	width: 210px;
+	margin-top: 15px;
+}
+
+.shopDetail .price table
+{
+	width: 100%;
+	margin-bottom: 10px;   
+}
+
+.shopDetail .price .value
+{
+	text-align: left;
+	width: 55%;
+}
+
+.shopCart .remove
+{
+	width: 16px;
+	height: 16px;
+	background: transparent url(../img/remove.png) center center no-repeat;
+	border: 0;
+	cursor: pointer;
+}
+
+.cartTable
+{
+	margin-bottom: 0 !important;
+}
+
+.cartTable td.input
+{
+	width: 50px;
+}
+
+.cartTable .headTitle
+{
+	width: 40%; 
+}
+
+.cartTable input.text
+{
+	width: 25px;
+	text-align: right;	
+}
+
+.totalTable
+{
+	margin-top: 0 !important;
+}
+
+.totalTable thead td
+{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.totalTable .value,
+.totalTable .title
+{
+	text-align: right !important;
+}
+
+.cartTable td.input,
+.cartTable .headInput
+{
+	text-align: center !important;
+}
+
+.shopCart .control .fakeButton
+{
+	float: right !important;
+	margin-bottom: 10px;
+	margin-left: 10px; 
+	margin-top: 10px;
+}
+
+.shopCart .control #backButton
+{
+	float: left !important;
+	margin-left: 0;
+}
+
+
+.shopReview .left p span:first-child,
+.shopReview .right p span:first-child
+{
+	font-weight: bold;   
+}
+
+.shopReview .left,
+.shopReview .right
+{
+	float: left;
+	width: 48%;
+}
+
+.shopReview .disForm .frmTable 
+{
+	width: 99%;
+}
+
+
+#cartInfo 
+{
+	white-space: nowrap;
+}
+
+#cartInfo a
+{   
+	background-image: url(../img/cart_icon.png);
+	padding-left: 28px !important;
+}
+#cartInfo a:hover
+{
+	text-decoration: underline !important;
+}
+
+#cartInfo a span
+{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.shop .firstSubmit
+{
+	position: absolute;
+	left: -10000px;
+	right: -10000px;
+	width: 5px;
+}
+
+.disForm input.checkbox,
+.disForm input.radio
+{
+	position: relative;
+	top: 2px;
+	
+}
+
+.disForm select
+{
+	width: 90.5%;
+}
+
+.shopForm .selector
+{
+	float: left;
+	position: relative;
+	top: 1px;
+	cursor: pointer;
+}
+
+.shopForm h3
+{
+	margin-bottom: 10px;
+}
+
+.shopForm h3 label
+{
+	cursor: pointer;
+}
+
+.disForm .fakeButton .btnFill
+{
+	float: right !important;
+}
+
+#eshopOrderDetailsForm
+{
+	position: relative;
+}
+
+#eshopOrderDetailsFormBack
+{
+	position: absolute;
+	bottom: 23px;
+}
+
+	* html #eshopOrderDetailsFormBack
+	{
+	   bottom: 13px;
+	}
+	
+	*:first-child+html #eshopOrderDetailsFormBack
+	{
+	   bottom: 13px;
+	}
+	
+.form .mandatory label
+{
+	padding-right: 12px;	 
+	background: transparent url(../img/mandatory.png) right 3px no-repeat;
+}
+
+.shopCategories
+{
+	margin-bottom: 0 !important;
+}
+
+.menuBlock 
+{
+	margin-bottom: 10px;
+}
+
+#rbcEsCategories
+{
+	padding-bottom: 8px;
+}
+
+
+.shopForm input.selector,
+.shopForm .shopFormHeading h3
+{
+	float: left;
+}
+
+.shopForm .shopFormHeading h3
+{
+	margin-left: 0 !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+	border: 0 !important;
+	cursor: pointer;
+	margin-right: 10px;	
+}
+
+.shopForm .shopFormHeading
+{
+	margin-bottom: 20px;
+}
+
+.rbcOrderPaymentBackButtonArea #eshopOrderDetailsFormBack
+{
+	bottom: 16px;
+}
+
+.shopList .fakeButton
+{
+	position: relative;
+	top: 5px;
+}
+
+.shopCategories h3
+{
+	padding-top: 10px !important;
+}
+
+.shopSale .price
+{
+	text-align: center;
+	font-size: 1.05em;
+}
+
+#eshopFormRegisteredUser
+{
+	position: relative;
+}
+
+#eshopLoginLostPassword
+{
+	position: absolute;
+	bottom: 22px;
+}
+
+.menuBlock h3
+{
+	color: #000000 !important;
+	border-color: #000000 !important;
+}
+
+.shopTable td a
+{
+	color: #000000;
+}
+
+.shopTable td a:hover
+{
+	color: #F5A31B;
+}	
+
+.shopDetail .price
+{
+	margin-bottom: 15px;
+}
+
+.variantRow .rbcSelectLabel
+{
+	float: left;
+	margin: 5px 0;
+	clear: both;
+}
+
+.variantRow .rbcSelectList
+{
+	float: right;
+	margin: 5px 0;
+	width: 100px;
+}
+
+.rbcVariants
+{
+	margin-bottom: 10px;
+}
+
+.rbcVariants .fakeButton .btnFill,
+.rbcVariants .fakeButton .btnFill .btnBgA,
+.rbcVariants .fakeButton .btnFill .btnBgB
+{
+	background-image: url('./../img/layout/buttonTable.png');
+}
+
+.rbcVariants .fakeButton .btnFill:hover,			 
+.rbcVariants .fakeButton .btnFill.hover,			
+.rbcVariants .fakeButton .btnFill:hover .btnBgA,			
+.rbcVariants .fakeButton .btnFill.hover .btnBgA,			
+.rbcVariants .fakeButton .btnFill:hover .btnBgB,			 
+.rbcVariants .fakeButton .btnFill.hover .btnBgB {
+	background-image: url('./../img/layout/buttonTableHover.png');
+}
+
+.rbcVariants .fakeButton .btnFill .btnBgA {
+	left: 0;
+	background-position: -10px -22px;
+}
+.rbcVariants .fakeButton .btnFill .btnBgB {
+	right: 0;
+	background-position: -15px -22px;
+}
+
+.rbcEshopProductDetails
+{
+	float: left;
+	width: 50% !important;
+	overflow: hidden;
+}
+
+.rbcEshopProductDetails ul
+{
+	margin-bottom: 10px;
+	margin-left: 12px;
+}
+
+.shopDetail .price td.title
+{
+	text-align: right;
+	font-size: 0.9em;
+}
+
+.shopDetail .price .rbcEshopSale td
+{
+	text-align: center;
+}
+
+.shopDetail .price ins
+{
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.shopDetail .price .rbcEshopDiscount td.value,
+.shopDetail .price ins,
+.rbcEshopStock-inStock td.value
+{
+	color: #56AA04;
+}
+
+.rbcEshopStock-outOfStock td.value
+{
+	color: #AF0000;
+}
+
+* html .shopDetail div.prodDetailImgOut
+{
+	width: 100% !important;
+}
+
+
+.shopForm .formError ul
+{
+	display: none !important;
+}
+
+.formError p
+{
+	font-weight: bold !important;
+} 
+
+.rbcAdPosition
+{
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+/* -- forms ---------------------------------------- */
+
+.disForm label.groupLabel {
+	margin-bottom: 5px !important;
+}
+
+.disForm .formTextarea {
+	margin-bottom: 5px;
+}
+
+.disForm .formTextarea label {
+	display: block !important;
+	position: relative;
+}
+
+.disForm .choicesGroup {
+	position: relative;
+	float: right;
+	width: 274px;
+	margin: -5px 0 10px 15px;
+	text-align: left;
+}
+
+.disForm .choicesGroup label {
+	float: none !important; 
+	display: inline !important;
+	margin: 0 !important;
+	font-weight: normal !important;
+}
+
+.disForm .choicesGroup input {
+	position: relative !important;
+	top: 2px;
+	float: none !important;
+	width: auto !important;
+	height: auto !important;
+	background: transparent none !important;
+	border: none !important;
+	margin: 5px 0 !important;
+}
+
+.disForm select {
+	width: 274px;
+	padding: 2px;
+	font-family: Arial, Helvetica, Tahoma, sans-serif;
+}
+
+.fileInput {
+	float: right;
+	position: relative;
+	width: 274px;
+	white-space: nowrap;
+	text-align: left;
+}
+
+.fileInputBase {
+	height: 0px;
+	width: auto;
+	overflow: hidden;
+}
+
+.fileInputCover {
+	position: relative;
+	width: 274px;
+	overflow: hidden;
+}
+
+.ie .fileInputBase
+{
+	height: auto;
+	width: auto;
+	overflow: hidden;
+}
+
+.ie .fileInputBase input
+{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 140px !important;
+	height: 22px;
+	font-size: 19px !important;
+	z-index: 5;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.fileInputBase
+	{
+		height: auto;
+		width: auto;
+		overflow: hidden;
+	}
+
+	.fileInputBase input
+	{
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 140px !important;
+		height: 22px;
+		font-size: 19px !important;
+		z-index: 5;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		cursor: pointer;
+	}
+}
+
+.fileInputText {
+	position: relative;
+	padding: 0 0 0 7px;
+	white-space: nowrap;
+	cursor: default;
+}
+
+.fileInputSelect {
+	position: relative;
+	display: inline-block;
+	background: #c4dd63 url("../img/layout/btn-bg.gif") 0 0 repeat-x;
+	color: #000;
+	line-height: 22px;
+	padding: 0 10px;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+
+.fileInputSelect i,
+.fileInputSelect u {
+	position: absolute;
+	display: block;
+	top: 0;
+	width: 5px;
+	height: 22px;
+	background: url("../img/layout/btn-bg.gif") no-repeat;
+}
+
+.fileInputSelect i {
+	left: 0;
+	background-position: 0 -22px;
+}
+
+.fileInputSelect u {
+	right: 0;
+	background-position: -5px -22px;
+}
+
+.fileInputSelect:hover,
+.fileInputSelect:hover i,
+.fileInputSelect:hover u {
+	background-image: url("../img/layout/buttonHover.png");
+}
+
+.colA1 select, .colA1 .fileInput, .colA1 .fileInputCover, .colA1 .choicesGroup,
+.colA2 select, .colA2 .fileInput, .colA2 .fileInputCover, .colA2 .choicesGroup,
+.colA3 select, .colA3 .fileInput, .colA3 .fileInputCover, .colA3 .choicesGroup,
+.colB1 select, .colB1 .fileInput, .colB1 .fileInputCover, .colB1 .choicesGroup,
+.colB2 select, .colB2 .fileInput, .colB2 .fileInputCover, .colB2 .choicesGroup,
+.colB4 select, .colB4 .fileInput, .colB4 .fileInputCover, .colB4 .choicesGroup,
+.colC2 select, .colC2 .fileInput, .colC2 .fileInputCover, .colC2 .choicesGroup,
+.colC3 select, .colC3 .fileInput, .colC3 .fileInputCover, .colC3 .choicesGroup,
+.colC4 select, .colC4 .fileInput, .colC4 .fileInputCover, .colC4 .choicesGroup,
+.colD2 select, .colD2 .fileInput, .colD2 .fileInputCover, .colD2 .choicesGroup {
+	width: 120px;
+}
+
+.colSplit .contBlock .contOut .contIn {margin: 2px;}
+.contBlock .contOut .contIn {margin: 0;}
+.contBlock .contOut {margin: 0 10px;}
+
+#eshopCustomerDeliverySwitch {
+	margin: 15px 0 10px;
+}
+
+/* -- end: forms ----------------------------------- */
+
+/* BR ESHOP UPDATE ================================================================================================== */
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.cleaner:before,
+.clearfix:after,
+.cleaner:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after,
+.cleaner:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.cleaner,
+.clearfix {
+    *zoom: 1;
+}
+
+.cartStep3 .inputCheckbox {
+    margin-bottom: 20px;
+}
+
+#coupon {
+    margin: 10px 0;
+    text-align: right;
+}
+
+#coupon .item {
+    background: none;
+    border: none;
+    padding: 0;
+    float: right;
+}
+
+#coupon label {
+    display: inline-block;
+    text-align: left;
+    margin: 1px 10px 0 0;
+}
+
+#coupon input[type="text"] {
+    width: 200px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    margin: 0;
+    text-align: left;
+}
+
+#coupon .blueSubmit {
+    float: left;
+    margin-left: 10px;
+}
+
+#coupon .cleaner{
+    display: none;
+}
+
+#coupon .submit {
+    text-decoration: none;
+}
+
+#coupon .item .cleaner {
+    display: none;
+}
+
+#coupon a{
+    float: none !important;
+    margin: -1px 0 0 10px !important;
+}
+
+.eshopProduct .price .instalment strong,
+.eshopTableList .price .instalment strong {
+    color: #C07A07;
+    white-space: nowrap;
+}
+
+.productDetail .value .instalment {
+    color: #C07A07;
+}
+
+.shopList .price {
+    line-height: 22px;
+    margin: 0 0 10px 0;
+}
+
+.shopDetail span.instalment {
+    font-size: 11px;
+    font-weight: 400;
+    top: -5px;
+    position: relative;
+}
+
+
+.accordion-title {
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+}
+
+.accordion-title.active {
+    border-bottom: none;
+}
+
+.accordion-content {
+    padding: 5px 10px;
+}
+
+
+.delivery-box {
+    padding: 5px 10px;
+}
+
+.delivery-header {
+    height: 30px;
+}
+
+.delivery-title {
+    width: 43%;
+    display: inline-block;
+    text-align: right;
+    float: left;
+    margin: 0;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.delivery-input {
+    position: relative;
+    margin: -22px 0 0 0;
+    float: right;
+    clear: both;
+    width: 59%;
+}
+
+.delivery-input .item {
+    background: none;
+    border: none;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.delivery-input label {
+    margin: 1px 0 0 0;
+    padding: 0;
+    text-align: left;
+    float: left;
+    display: none;
+}
+
+.delivery-input label span{
+    display: none;
+}
+
+.delivery-input input[type="text"] {
+    width: 55px !important;
+    float: left;
+    margin: 0 0 0 8px !important;
+    height: 20px;
+    font-size: 1.0em;
+    position: relative;
+    top: -3px;
+    text-align: left;
+    padding: 0 3px;
+}
+
+#mainHome .delivery-input input[type="text"] {
+    width: 95px;
+    margin: 0 0 0 14px;
+}
+
+.delivery-input input[type="text"]::-webkit-input-placeholder {
+    color: #353535;
+}
+
+.delivery-input input[type="text"]:-moz-placeholder { /* Firefox 18- */
+    color: #353535;
+}
+
+.delivery-input input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+    color: #353535;
+}
+
+.delivery-input input[type="text"]:-ms-input-placeholder {
+    color: #353535;
+}
+
+#delivery-submit, #coupon a {
+    margin: -3px 0 5px 5px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    color: #000;
+    float: right;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 0px 7px;
+    border: 1px solid #C07A07;
+    background-color: #E1891D;
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, #C07907),
+            color-stop(1, #EB9F1D)
+    );
+    background-image: -o-linear-gradient(top, #C07907 0%, #EB9F1D 100%);
+    background-image: -moz-linear-gradient(top, #C07907 0%, #EB9F1D 100%);
+    background-image: -webkit-linear-gradient(top, #C07907 0%, #EB9F1D 100%);
+    background-image: -ms-linear-gradient(top, #C07907 0%, #EB9F1D 100%);
+    background-image: linear-gradient(to top, #C07907 0%, #EB9F1D 100%);
+    border-radius: 5px;
+}
+
+#delivery-submit:hover, #coupon a:hover {
+    border-color: #C07A07;
+    color: #000 !important;
+    background-color: #D7741D;
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0, #C07907),
+            color-stop(1, #EB9F1D)
+    );
+    background-image: -o-linear-gradient(bottom, #C07907 0%, #EB9F1D 100%);
+    background-image: -moz-linear-gradient(bottom, #C07907 0%, #EB9F1D 100%);
+    background-image: -webkit-linear-gradient(bottom, #C07907 0%, #EB9F1D 100%);
+    background-image: -ms-linear-gradient(bottom, #C07907 0%, #EB9F1D 100%);
+    background-image: linear-gradient(to bottom, #C07907 0%, #EB9F1D 100%);
+}
+
+#rbcDeliveryCostWaiting {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#rbcDeliveryCostResult {
+    margin: 10px 0;
+}
+
+.boxContent #rbcDeliveryCostResult ul {
+    margin-bottom: 5px;
+}
+
+#instalment-service {
+    margin: -4px -10px 10px -10px;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+}
+
+#instalment-service li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+    background: none;
+    line-height: 0;
+    width: 50%;
+    text-align: center;
+}
+
+.instalment-icon a, .instalment-icon a img {
+    border: none !important;
+    outline: none !important;
+}
+
+#mainHome #instalment-service li {
+    margin: 0 7px 0 0;
+}
+
+#instalment-service li.active {
+    border-bottom: 3px solid #C07A07;
+}
+
+#instalment-service li a {
+    display: inline-block;
+    padding: 2px 10px;
+}
+
+#mainHome #instalment-service li a {
+    padding: 2px 6px;
+}
+
+.boxContent #instalment-service li a img {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#instalment-list .instalment-tab ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 48%;
+    -moz-column-width: 48%;
+    column-width: 48%;
+    margin-bottom: 7px;
+    padding: 0;
+}
+
+#mainHome #instalment-list .instalment-tab ul {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+}
+
+#instalment-list .instalment-tab ul li {
+    background: none;
+    padding: 2px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.instalment-icon img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* BR ESHOP UPDATE ================================================================================================== */

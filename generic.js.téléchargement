@@ -1,0 +1,340 @@
+/******************************************************************************
+*	GET ELEMENT BY ID
+******************************************************************************/
+function gE( id)
+{
+	if( document.getElementById)
+		return document.getElementById(id);
+	else if( document.all)
+		return document.all[id];
+	else if( document.layers)
+		return document.layers[id];
+	return null;
+}
+/******************************************************************************
+*	END: GET ELEMENT BY ID
+******************************************************************************/
+
+
+
+/******************************************************************************
+*	GET ELEMENTS BY CLASS NAMES
+******************************************************************************/
+function getElementsByClassNames( rootNodeId, classNames)
+{
+	var allKids;
+	var retElem;
+	
+	allKids = (gE( rootNodeId) || document.body).getElementsByTagName( "*");
+	
+	retElem = new Array();
+	
+	for( i=0; i<allKids.length; i++)
+		if( classNames.indexOf(allKids[ i].className))
+			retElem.push( allKids[ i]);
+	
+	return retElem;
+	
+}
+/******************************************************************************
+*	END: GET ELEMENTS BY SINGLE CLASS NAME
+******************************************************************************/
+
+
+function isElementUnderParentWithClass( el, className)
+{
+	
+	var pNode = el;
+	
+	while( pNode = pNode.parentNode )
+	{
+		if( pNode.className && pNode.className.match( new RegExp("(^|\\s)" + className + "(\\s|$)")))
+        {
+			return true;
+        }
+	}
+	
+	return false;
+	
+}
+
+
+function isIE6()
+{
+	return navigator.userAgent.indexOf("MSIE 6") > -1 && navigator.userAgent.indexOf("Opera") == -1;
+}
+
+function isIE7()
+{
+	return document.all&&navigator.userAgent.toLowerCase().indexOf("msie 7")!=-1;
+}
+
+function isGecko()
+{
+	return navigator.userAgent.toLowerCase().indexOf('gecko') != -1;
+}
+
+function isSafari()
+{
+	return navigator.userAgent.toLowerCase().indexOf('safari') != -1;
+}
+
+
+var borderSize = 10;    
+var newEl;
+
+var isIE7Var = isIE7();
+var isGeckoVar = isGecko();
+var isSafariVar = isSafari();
+
+function overImage(img)
+{
+    
+    return;
+
+    img.style.zIndex = "37";
+    
+    
+    /******************************************************************************
+    *   LIGHT BORDER (OVERIMAGE)
+    ******************************************************************************/
+    
+    img.style.filter = "alpha( opacity=50)";
+    img.style.opacity = "0.5";
+    
+    newEl = document.createElement( "div");
+    
+    shiftX = 1;
+    shiftY = 1;
+    
+    if( ("prodListImg" == img.className) && isGeckoVar && !isSafariVar)
+    {
+        if( isElementUnderParentWithClass( img, "colMain"))
+        {
+            shiftX = 1;
+        }
+        else
+        {
+            shiftX = -1;
+        }
+    }
+    
+   
+    if( ("galDetailImg" == img.className) && isGeckoVar && !isSafariVar)
+    {
+        if( isElementUnderParentWithClass( img, "colMain") && (img.width % 2) )
+        {
+            shiftX = 2;
+        }        
+    }
+                        
+    newEl.style.position = "absolute";
+    newEl.style.left = (img.offsetLeft + borderSize + shiftX) + "px";
+    newEl.style.top = (img.offsetTop + borderSize + shiftY) + "px";
+    newEl.style.width = (img.width - borderSize*2) + "px";
+    newEl.style.height = (img.height - borderSize*2) + "px";
+    newEl.style.background = " transparent url('" + img.src + "') -" + borderSize + "px -" + borderSize + "px no-repeat";
+    newEl.style.zIndex = "42";
+    newEl.style.cursor = "pointer";
+    
+    if( ("galDetailImg" == img.className) && isIE7Var )
+    {
+        newEl.style.left = (img.offsetLeft + borderSize + shiftX - 13) + "px";
+    }
+        
+    img.parentNode.appendChild( newEl);
+    
+    
+    /******************************************************************************
+    *   END: LIGHT BORDER (OVERIMAGE)
+    ******************************************************************************/
+    
+}
+
+function swap_classes(el, class_1, class_2)
+{    
+    if (el)
+    {
+        if (-1 != el.className.search(class_1))
+        {
+            el.className = el.className.replace(class_1, class_2);
+        } 
+        else
+        if (-1 != el.className.search(class_2))
+        {
+            el.className = el.className.replace(class_2, class_1);
+        } 
+    }
+}
+
+function swap_titles(el, title_1, title_2)
+{
+    if (el)
+    {                
+        if (-1 != el.title.search(title_1))
+        {
+            el.title = el.title.replace(title_1, title_2);
+        } 
+        else
+        if (-1 != el.title.search(title_2))
+        {
+            el.title = el.title.replace(title_2, title_1);
+        } 
+    }    
+}
+
+function swap_bill_check()
+{
+	var el_id = 'eshopCustomerDeliveryIsBilling';
+	var block_id = 'eshopCustomerBillingBlock';
+	var input_el = $(el_id);
+	var block_el = $(block_id);
+
+	if (null == input_el || null == block_el)
+	{
+		return;
+	}
+
+	var label_el = null;
+	var tmp_el = input_el;
+	while (tmp_el = tmp_el.nextSibling)
+	{
+		if ('label' == tmp_el.nodeName.toLowerCase())
+		{
+			label_el = tmp_el;
+			break;
+		}
+	}
+
+	var div_el = document.createElement('div');
+	div_el.id = 'eshopCustomerDeliverySwitch';
+	div_el.appendChild(input_el);
+	div_el.appendChild(label_el);
+	block_el.appendChild(div_el);
+
+}
+
+jQuery(document).ready(function($) {
+
+    var wnTpl = {};
+
+    wnTpl.isIE6 = (jQuery.browser.msie && jQuery.browser.version=="6.0") ? true : false;
+    wnTpl.isIE7 = (jQuery.browser.msie && jQuery.browser.version=="7.0") ? true : false;
+    wnTpl.isIE8 = (jQuery.browser.msie && jQuery.browser.version=="8.0") ? true : false;
+    wnTpl.isLtIE9 = (wnTpl.isIE6 || wnTpl.isIE7 || wnTpl.isIE8);
+
+    wnTpl.doContentChange = true;
+    wnTpl.navTouchClickFlag = false;
+
+
+    /* ============================================================================================================== */
+    /* wnAccordion */
+    /* ============================================================================================================== */
+
+    wnTpl.wnAccordion = function() {
+
+        $('.accordion > a.accordion-title').bind('click', function() {
+            if($('.accordion-content').is(":visible")) {
+                $('.accordion-content').slideUp();
+            } else  {
+                $('.accordion-content').slideDown();
+            }
+        });
+
+    };
+
+
+    /* ============================================================================================================== */
+    /* wnInitTabsInstalment */
+    /* ============================================================================================================== */
+
+    wnTpl.wnInitTabsInstalment = function() {
+
+        var allTabs = $('#instalment-list > .instalment-tab').hide().removeClass('instalment-border');
+        var allIcons = $('#instalment-service > .instalment-icon');
+
+        $(allTabs).each(function(i) {
+            if(i == 0) $(this).show();
+        });
+
+        $(allIcons).each(function(i) {
+            if(i == 0) $(this).addClass('active');
+        });
+
+
+        $('#instalment-service > .instalment-icon > a').bind('click touchstart', function() {
+            if (!wnTpl.navTouchClickFlag) {
+                wnTpl.navTouchClickFlag = true;
+                setTimeout( function() { wnTpl.navTouchClickFlag = false; }, 500);
+
+                var listID = $(this).attr('data');
+                if( $('#'+listID).is(':hidden') == true ) {
+                    $(allTabs).hide();
+                    $('#'+listID).show();
+                    $(allIcons).removeClass('active');
+                    $(this).parent().addClass('active');
+
+                    wnTpl.doContentChange = false;
+                    var block = document.querySelector('#detailScriptInside');
+                    RubicusFrontendIns.onResize(block);
+                }
+            }
+            return false;
+        });
+
+    }
+
+    /* ============================================================================================================== */
+    /* wnInitEvents - init handlers to onContentChange and onResize events */
+    /* ============================================================================================================== */
+
+    wnTpl.wnInitEvents = function() {
+
+        if (RubicusFrontendIns) {
+
+            RubicusFrontendIns.addObserver({
+                // onContentChange
+                onContentChange: function() {
+                    wnTpl.wnOnContentChangeHandler();
+                    wnTpl.wnAccordion();
+                    wnTpl.wnInitTabsInstalment();
+                },
+                // onResize
+                onResize: function() {
+                    wnTpl.wnOnContentChangeHandler();
+                }
+            });
+        }
+    }
+
+    /* ==========================================================================
+     wnOnContentChangeHandler
+     - handler to onContentChange Event
+     ========================================================================== */
+    wnTpl.wnOnContentChangeHandler = function()
+    {
+        wnTpl.wnInitMainMenu();
+
+    }
+
+    /* ==========================================================================
+     wnInit
+     - init all template js functions
+     ========================================================================== */
+    wnTpl.wnInit = function()
+    {
+
+        wnTpl.wnInitEvents();
+        wnTpl.wnAccordion();
+        wnTpl.wnInitTabsInstalment();
+
+
+    }
+
+    /* ==========================================================================
+     calls
+     - start point of all template scripts
+     ========================================================================== */
+    wnTpl.wnInit();
+
+});

@@ -1,0 +1,24 @@
+* {
+	color: #000000 !important;
+	background-color: #ffffff !important;
+	background-image: none !important;
+	border-color: #000000 !important;
+}
+hr {
+	border: none;
+	border-top: 1px solid #000000;
+	background-color: transparent !important;
+}
+a {
+	text-decoration: underline !important;
+}
+.tbLinkList, .menuBlockOut, .navigatorBlock, .contImg, .paging {
+	display: none;
+}
+.wsw table.modernTable tr td {
+	border-collapse: collapse;
+	border: 1px solid #000000 !important;
+}
+.wsw table.modernTable thead tr td {
+	background-color: #cccccc !important;
+}
